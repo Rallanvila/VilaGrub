@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import "normalize.css";
 import styles from "../styles/Home.module.css";
-import styled from "styled-components";
+import styled, { ThemeProvider } from "styled-components";
 import Header from "../components/Header";
 import { ThemProvider } from "styled-components";
 
@@ -12,6 +12,7 @@ const theme = {
 		brandBrown: "#c69250",
 		brandGreen: "#89a525",
 		brandGrey: "#789494",
+		dark: "#212529",
 	},
 };
 
