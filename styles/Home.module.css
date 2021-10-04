@@ -119,3 +119,11 @@
     flex-direction: column;
   }
 }
+
+
+.navbar__expanded {
+    display: none;
+}
+.navbar__expanded.active{
+    display: block
+}

@@ -5,8 +5,10 @@ import { SpaceBetween } from "./styles/SpaceBetween.styled";
 import { FlexCenter } from "./styles/FlexCenter.styled";
 import Image from "next/image";
 import logo from "../svg/logo.svg";
-import { FindStore, FindStoreStyled } from "./FindStore.styled";
+// import { FindStoreStyled } from "./FindStore.styled";
 import { Button } from "./Button";
+import { NavDropDown } from "./styles/NavDropDown.styled";
+import { NavContent } from "./NavContent";
 
 export default function Header() {
 	return (
@@ -14,7 +16,7 @@ export default function Header() {
 			<Nav>
 				<Container>
 					<SpaceBetween>
-						<FlexCenter>
+						<div className="nav__left">
 							<div className="logo">
 								<Image src={logo} alt="logo" width={50} height={50} />
 							</div>
@@ -27,24 +29,65 @@ export default function Header() {
 							<a href="/svg" className="nav__link">
 								Gift Cards
 							</a>
-						</FlexCenter>
-						<FlexCenter>
-							<FindStoreStyled>
-								<FindStore />
-								{/* <div className="navbar__find-store"> */}
-								{/* <i
-									className="fas fa-map-marker-alt"
-									style={{ fontSize: "1.5rem" }}
-								></i> */}
-								{/* <span className="title">Find a store</span> */}
-								{/* </div> */}
-							</FindStoreStyled>
-							<Button>Sign In</Button>
-							<Button>Join Now</Button>
-						</FlexCenter>
+						</div>
+
+						<div className="nav__right">
+							<i
+								id="navMenuBars"
+								onClick={toggleMenu}
+								style={{ fontSize: "1.5rem", cursor: "pointer" }}
+								className="far fa-bars"
+							></i>
+							<i className="fas fa-map-marker-alt"></i>
+							<span className="title">Find a store</span>
+							<Button className="nav__btn" border="#212529">
+								Sign In
+							</Button>
+							<Button className="nav__btn" bg="#212529" color="#fff">
+								Join Now
+							</Button>
+						</div>
 					</SpaceBetween>
 				</Container>
 			</Nav>
+
+			<Container>
+				<div className="navbar__expanded">
+					<a href="#" className="navbar__item">
+						Menu
+					</a>
+					<a href="#" className="navbar__item">
+						Rewards
+					</a>
+					<a href="#" className="navbar__item">
+						Gift Cards
+					</a>
+					<div className="navbar__account">
+						<Button className="nav__btn" border="#212529">
+							Sign In
+						</Button>
+						<Button className="nav__btn" bg="#212529" color="#fff">
+							Join Now
+						</Button>
+						<div className="navbar__find-store">
+							<i
+								className="fas fa-map-marker-alt"
+								style={{ fontSize: "1.5rem" }}
+							></i>
+							<span className="title">Find a store</span>
+						</div>
+					</div>
+				</div>
+			</Container>
 		</>
 	);
+
+	function toggleMenu() {
+		const navDropDown = document.querySelectorAll(".navbar__expanded");
+		navDropDown.forEach((n) =>
+			n.classList.contains("active")
+				? n.classList.remove("active")
+				: n.classList.add("active"),
+		);
+	}
 }

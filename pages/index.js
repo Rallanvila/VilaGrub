@@ -5,8 +5,9 @@ import styles from "../styles/Home.module.css";
 import styled, { ThemeProvider } from "styled-components";
 import Header from "../components/Header";
 import { ThemProvider } from "styled-components";
+import MainBanner from "../components/MainBanner";
 
-const theme = {
+export const theme = {
 	colors: {
 		brandBlue: "#294442",
 		brandBrown: "#c69250",
@@ -24,6 +25,7 @@ export default function Home() {
 				href="https://pro.fontawesome.com/releases/v6.0.0-beta2/css/all.css"
 			/>
 			<Header />
+			<MainBanner />
 		</>
 	);
 }

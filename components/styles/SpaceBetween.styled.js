@@ -4,4 +4,9 @@ export const SpaceBetween = styled.div`
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	.nav__left,
+	.nav__right {
+		display: flex;
+		align-items: center;
+	}
 `;

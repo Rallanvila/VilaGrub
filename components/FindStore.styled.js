@@ -18,14 +18,3 @@ export const FindStoreStyled = styled.div`
 		font-size: 1.1rem;
 	}
 `;
-
-export function FindStore() {
-	return (
-		<FindStore>
-			<div className="navbar__find-store">
-				<i className="fas fa-map-marker-alt" style={{ fontSize: "1.5rem" }}></i>
-				<span className="title">Find a store</span>
-			</div>
-		</FindStore>
-	);
-}
