@@ -9,6 +9,7 @@ export const Nav = styled.nav`
 	z-index: 20;
 	overflow-x: hidden;
 	display: flex;
+	justify-content: space-between;
 	.logo {
 		margin-right: 2rem;
 	}
@@ -34,8 +35,17 @@ export const Nav = styled.nav`
 		display: none;
 		margin-right: 1rem;
 	}
+	.fa-bars {
+		display: block;
+	}
 
-	@media (min-width: 780px) {
+	@media screen and (min-width: 780px) {
+		.navbar__expanded {
+			display: none;
+		}
+		.fa-bars {
+			display: none;
+		}
 		.nav__link {
 			display: block;
 			margin-right: 1rem;
