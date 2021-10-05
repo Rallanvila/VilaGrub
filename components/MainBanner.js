@@ -1,5 +1,4 @@
 import { Container } from "./styles/Container.styled";
-import { theme } from "../pages";
 import { FlexCenter } from "./styles/FlexCenter.styled";
 
 function MainBanner() {

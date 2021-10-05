@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
 	max-width: 100%;
 	width: 1320px;
-	/* padding: 0 2rem; */
+	padding: 0 2rem;
 	margin: 0 auto;
 	overflow: hidden;
 	background: ${({ bg }) => bg};
@@ -35,7 +35,7 @@ export const Container = styled.div`
 			border-top: rgba(214, 211, 214, 0.933) 1px solid;
 			padding-top: 2rem;
 			.nav__btn {
-				margin-right: 1rem;
+				margin-left: 1rem;
 				margin-bottom: 2rem;
 			}
 			.navbar__find-store {

@@ -4,8 +4,8 @@ import "normalize.css";
 import styles from "../styles/Home.module.css";
 import styled, { ThemeProvider } from "styled-components";
 import Header from "../components/Header";
-import { ThemProvider } from "styled-components";
 import MainBanner from "../components/MainBanner";
+import { CardBanner } from "../components/CardBanner";
 
 export const theme = {
 	colors: {
@@ -26,6 +26,7 @@ export default function Home() {
 			/>
 			<Header />
 			<MainBanner />
+			<CardBanner />
 		</>
 	);
 }

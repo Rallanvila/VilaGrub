@@ -2,13 +2,9 @@ import "styled-components";
 import { Container } from "./styles/Container.styled";
 import { Nav } from "./styles/Header.styled";
 import { SpaceBetween } from "./styles/SpaceBetween.styled";
-import { FlexCenter } from "./styles/FlexCenter.styled";
 import Image from "next/image";
 import logo from "../svg/logo.svg";
-// import { FindStoreStyled } from "./FindStore.styled";
 import { Button } from "./Button";
-import { NavDropDown } from "./styles/NavDropDown.styled";
-import { NavContent } from "./NavContent";
 
 export default function Header() {
 	return (
