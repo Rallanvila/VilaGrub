@@ -4,12 +4,13 @@ import Image from "next/dist/client/image";
 import { ImageContainer } from "./styles/ImageContainer.styled";
 import { Button } from "../components/Button";
 import bannerContent from "../data/content-CardBanner";
+import React, { Fragment } from "react";
 
 export function CardBanner() {
 	return (
 		<>
 			{bannerContent.map((c) => (
-				<>
+				<React.Fragment key={c.id}>
 					<Grid className="card__grid" bg={c.background}>
 						<div style={{ padding: "3rem 1rem" }}>
 							<h2 className="card__heading">{c.title}</h2>
@@ -31,7 +32,8 @@ export function CardBanner() {
 							/>
 						</ImageContainer>
 					</Grid>
-				</>
+				</React.Fragment>
+				// </>
 			))}
 		</>
 	);
