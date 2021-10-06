@@ -1,9 +1,8 @@
-import { Container } from "./styles/Container.styled";
-import { Grid } from "./styles/Grid.styled";
+import { Grid } from "../../helpers/Grid.styled";
 import Image from "next/dist/client/image";
-import { ImageContainer } from "./styles/ImageContainer.styled";
-import { Button } from "../components/Button";
-import bannerContent from "../data/content-CardBanner";
+import { ImageContainer } from "../../helpers/ImageContainer.styled";
+import { Button } from "../Button";
+import bannerContent from "../../data/content-CardBanner";
 import React, { Fragment } from "react";
 
 export function CardBanner() {
@@ -33,7 +32,6 @@ export function CardBanner() {
 						</ImageContainer>
 					</Grid>
 				</React.Fragment>
-				// </>
 			))}
 		</>
 	);

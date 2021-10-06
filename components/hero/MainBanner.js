@@ -1,5 +1,5 @@
-import { Container } from "./styles/Container.styled";
-import { FlexCenter } from "./styles/FlexCenter.styled";
+import { Container } from "../../helpers/Container.styled";
+import { FlexCenter } from "../../helpers/FlexCenter.styled";
 
 function MainBanner() {
 	return (

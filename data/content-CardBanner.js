@@ -1,4 +1,4 @@
-import milkshake from "../images/milkshake.webp";
+import milkshake from "../public/milkshake.webp";
 
 const bannerContent = [
 	{
@@ -17,8 +17,7 @@ const bannerContent = [
 		title: "So now you're thirsty..",
 		description:
 			"Kalua Cinnamon Dolce: water down the heat with our Kalua Cinnamon Dolce thirst quencher.",
-		image:
-			"https://images.pexels.com/photos/3727250/pexels-photo-3727250.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+		image: milkshake,
 		alt: "milkshake",
 		background: "#789494",
 		btnBorder: "#212529",

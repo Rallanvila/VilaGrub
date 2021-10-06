@@ -1,10 +1,10 @@
 import "styled-components";
-import { Container } from "./styles/Container.styled";
-import { Nav } from "./styles/Header.styled";
-import { SpaceBetween } from "./styles/SpaceBetween.styled";
+import { Container } from "../../helpers/Container.styled";
+import { Nav } from "./Header.styled";
+import { SpaceBetween } from "../../helpers/SpaceBetween.styled";
 import Image from "next/image";
-import logo from "../svg/logo.svg";
-import { Button } from "./Button";
+import logo from "../../svg/logo.svg";
+import { Button } from "../Button";
 
 export default function Header() {
 	return (
