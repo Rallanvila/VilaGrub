@@ -4,7 +4,7 @@ export const ImageContainer = styled.div`
 	width: 100%;
 	max-width: 1320px;
 	height: 100%;
-	max-height: 500px;
+	min-height: 400px;
 	object-fit: cover;
 	object-position: center;
 	position: relative;

@@ -14,7 +14,11 @@ function DuoCard() {
 				{duoCardContent.map((m) => (
 					<>
 						<FlexCenter
-							style={{ background: "#789494", padding: "2rem 1.5rem" }}
+							style={{
+								background: "#789494",
+								padding: "2rem 1.5rem",
+								marginBottom: "1rem",
+							}}
 						>
 							<ImageContainer style={{ height: "400px" }}>
 								<Image src={m.image} alt={m.alt} layout="fill" />

@@ -12,9 +12,14 @@ export function CardBanner() {
 				<React.Fragment key={c.id}>
 					<Grid className="card__grid" bg={c.background}>
 						<div style={{ padding: "3rem 1rem" }}>
-							<h2 className="card__heading">{c.title}</h2>
-							<p className="card__description">{c.description}</p>
+							<h2 className="card__heading" style={c.color}>
+								{c.title}
+							</h2>
+							<p className="card__description" style={c.color}>
+								{c.description}
+							</p>
 							<Button
+								style={c.color}
 								border={c.btnBorder}
 								bg={c.background}
 								color={c.btnBorder}

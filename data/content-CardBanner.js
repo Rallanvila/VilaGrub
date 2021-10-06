@@ -11,6 +11,7 @@ const bannerContent = [
 		alt: "hamburger",
 		background: "#c69250",
 		btnBorder: "#212529",
+		color: { color: "#212529" },
 	},
 	{
 		id: 2,
@@ -19,8 +20,9 @@ const bannerContent = [
 			"Kalua Cinnamon Dolce: water down the heat with our Kalua Cinnamon Dolce thirst quencher.",
 		image: milkshake,
 		alt: "milkshake",
-		background: "#789494",
-		btnBorder: "#212529",
+		background: "#294442",
+		btnBorder: "#fff",
+		color: { color: "#fff" },
 	},
 ];
 
