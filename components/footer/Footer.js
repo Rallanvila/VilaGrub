@@ -1,8 +1,15 @@
 import Collapsible from "../collapsible/Collapsible";
 import { StyledCollapsible } from "../collapsible/StyledCollapsible.styled";
-import { FooterStyled } from "./Footer.styled";
 import FooterSocial from "./FooterSocial";
 import { data } from "../collapsible/data-collapsible";
+import styled from "styled-components";
+
+const FooterStyled = styled.footer`
+	width: 100%;
+	padding: 1rem;
+	max-width: 1320px;
+	margin: 0 auto;
+`;
 
 function Footer() {
 	return (
@@ -22,27 +29,6 @@ function Footer() {
 			<h2 style={{ fontSize: "1.2rem", marginBottom: "1.7rem" }}>Hire me!</h2>
 		</FooterStyled>
 	);
-
-	function toggleCollapsible() {
-		// const collapsible = document.querySelectorAll(".collapsible");
-		const collapsible = document.querySelectorAll(".collapsible");
-
-		collapsible.classList.contains("collapsible--expanded")
-			? collapsible.classList.remove("collapsible--expanded")
-			: collapsible.classList.add("collapsible--expanded");
-	}
-
-	// function handleClick() {
-	// 	const collapsibleContent = document.querySelectorAll(".collapsible");
-
-	// 	collapsibleContent.forEach((c) =>
-	// 		c.addEventListener("click", function () {
-	// 			this.classList.contains("collapsible--expanded")
-	// 				? this.classList.remove("collapsible--expanded")
-	// 				: this.classList.add("collapsible--expanded");
-	// 		}),
-	// 	);
-	// }
 }
 
 export default Footer;

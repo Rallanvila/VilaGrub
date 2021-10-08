@@ -1,5 +1,6 @@
 import { StyledCollapsible } from "./StyledCollapsible.styled";
 import { useState } from "react";
+import { FaChevronDown, FaChevronRight } from "react-icons/fa";
 
 export default function Collapsible({
 	item: { title, section1, section2, section3 },
@@ -17,10 +18,11 @@ export default function Collapsible({
 			<StyledCollapsible>
 				<header>
 					<h2>{title}</h2>
-					<i
-						onClick={toggle}
-						className={clicked ? "far fa-chevron-down" : "far fa-chevron-right"}
-					></i>
+					{clicked ? (
+						<FaChevronDown onClick={toggle} />
+					) : (
+						<FaChevronRight onClick={toggle} />
+					)}
 				</header>
 				{clicked ? (
 					<>

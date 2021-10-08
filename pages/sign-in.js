@@ -21,10 +21,6 @@ export default function Menu() {
 		<>
 			<Head>
 				<title>Vila's Grub Spot | Sign In</title>
-				<link
-					rel="stylesheet"
-					href="https://pro.fontawesome.com/releases/v6.0.0-beta2/css/all.css"
-				/>
 			</Head>
 			<SignInHeader />
 			<SignInWrapper>

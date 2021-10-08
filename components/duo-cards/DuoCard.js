@@ -1,5 +1,4 @@
 import { Button } from "../Button";
-import { Container } from "../../helpers/Container.styled";
 import { FlexCenter } from "../../helpers/FlexCenter.styled";
 import { Grid } from "../../helpers/Grid.styled";
 import React, { Fragment } from "react";

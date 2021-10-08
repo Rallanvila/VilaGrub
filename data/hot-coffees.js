@@ -4,7 +4,7 @@ export const hotCoffees = [
 			"https://images.pexels.com/photos/4195602/pexels-photo-4195602.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
 		alt: "Cafe Americano",
 		label: "Cafe Americano",
-		page: "/",
+		page: "/menu-item-details",
 	},
 	{
 		image:

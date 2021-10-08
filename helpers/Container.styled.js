@@ -8,6 +8,9 @@ export const Container = styled.div`
 	overflow: hidden;
 	background: ${({ bg }) => bg};
 	color: ${({ color }) => color};
+	display: ${({ display }) => display || "block"};
+	justify-content: ${({ justify }) => justify || "flex-start"};
+	align-items: ${({ align }) => align || "flex-start"};
 	.navbar__expanded {
 		position: absolute;
 		opacity: 0;
