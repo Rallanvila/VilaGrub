@@ -5,6 +5,8 @@ import { SpaceBetween } from "../../helpers/SpaceBetween.styled";
 import Image from "next/image";
 import logo from "../../svg/logo.svg";
 import { Button } from "../Button";
+import Menu from "../../pages/menu";
+import Link from "next/link";
 
 export default function Header() {
 	return (
@@ -13,12 +15,14 @@ export default function Header() {
 				<Container>
 					<SpaceBetween>
 						<div className="nav__left">
-							<div className="logo">
-								<Image src={logo} alt="logo" width={50} height={50} />
-							</div>
-							<a href="/svg" className="nav__link">
-								Menu
-							</a>
+							<Link href="/">
+								<div className="logo" style={{ cursor: "pointer" }}>
+									<Image src={logo} alt="logo" width={50} height={50} />
+								</div>
+							</Link>
+							<Link href="/menu">
+								<a className="nav__link">Menu</a>
+							</Link>
 							<a href="/svg" className="nav__link">
 								Rewards
 							</a>
@@ -36,9 +40,11 @@ export default function Header() {
 							></i>
 							<i className="fas fa-map-marker-alt"></i>
 							<span className="title">Find a store</span>
-							<Button className="nav__btn" border="#212529">
-								Sign In
-							</Button>
+							<Link href="/sign-in">
+								<Button className="nav__btn" border="#212529">
+									Sign In
+								</Button>
+							</Link>
 							<Button className="nav__btn" bg="#212529" color="#fff">
 								Join Now
 							</Button>

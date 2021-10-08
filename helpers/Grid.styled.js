@@ -17,6 +17,7 @@ export const Grid = styled.div`
 	@media screen and (min-width: 780px) {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
+		gap: 1rem;
 		width: 100%;
 		/* height: 500px; */
 		max-width: 1320px;

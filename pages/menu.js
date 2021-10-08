@@ -29,7 +29,9 @@ export default function Menu() {
 			<Header />
 			<MenuGrid>
 				<SideMenu />
-				<MainMenu />
+				<div>
+					<MainMenu />
+				</div>
 			</MenuGrid>
 
 			<Footer />
