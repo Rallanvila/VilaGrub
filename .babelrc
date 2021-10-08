@@ -1,0 +1,34 @@
+// {
+//     "presets": ["next/babel"],
+//     "plugins": [["styled-components", { "ssr": true }]]
+//   }
+
+
+  //! Github fix that the recommended
+// {
+//     "presets": [
+//       [
+//         "@babel/preset-env",
+//         {
+//           "targets": {
+//             "node": 4
+//           }
+//         }
+//       ]
+//     ]
+//   }
+
+//!On styled Components website fix
+
+{
+    "presets": ["next/babel"],
+    "plugins": [
+      [
+        "babel-plugin-styled-components",
+        {
+          "ssr": true
+        }
+      ]
+
+    ]
+  }

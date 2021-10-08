@@ -5,8 +5,8 @@ import { SpaceBetween } from "../../helpers/SpaceBetween.styled";
 import Image from "next/image";
 import logo from "../../svg/logo.svg";
 import { Button } from "../Button";
-import Menu from "../../pages/menu";
 import Link from "next/link";
+import { FindStoreStyled } from "../FindStore.styled";
 
 export default function Header() {
 	return (
@@ -65,19 +65,19 @@ export default function Header() {
 						Gift Cards
 					</a>
 					<div className="navbar__account">
-						<Button className="nav__btn" border="#212529">
+						<Button style={{ marginRight: "1rem" }} border="#212529">
 							Sign In
 						</Button>
-						<Button className="nav__btn" bg="#212529" color="#fff">
+						<Button bg="#212529" color="#fff">
 							Join Now
 						</Button>
-						<div className="navbar__find-store">
+						<FindStoreStyled>
 							<i
 								className="fas fa-map-marker-alt"
 								style={{ fontSize: "1.5rem" }}
 							></i>
 							<span className="title">Find a store</span>
-						</div>
+						</FindStoreStyled>
 					</div>
 				</div>
 			</Container>

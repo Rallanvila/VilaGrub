@@ -11,8 +11,8 @@ function DuoCard() {
 	return (
 		<React.Fragment>
 			<Grid>
-				{duoCardContent.map((m) => (
-					<>
+				{duoCardContent.map((m, index) => (
+					<React.Fragment key={index}>
 						<FlexCenter
 							style={{
 								background: "#789494",
@@ -29,7 +29,7 @@ function DuoCard() {
 								Order Now
 							</Button>
 						</FlexCenter>
-					</>
+					</React.Fragment>
 				))}
 			</Grid>
 		</React.Fragment>

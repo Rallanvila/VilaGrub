@@ -17,4 +17,7 @@ export const FindStoreStyled = styled.div`
 		cursor: pointer;
 		font-size: 1.1rem;
 	}
+	@media screen and (max-width: 780px) {
+		margin-top: 2rem;
+	}
 `;

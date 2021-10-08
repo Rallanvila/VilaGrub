@@ -25,6 +25,7 @@ const StyledSignInFooter = styled.footer`
 			margin: 1rem 1rem;
 			text-decoration: none;
 			font-weight: 500;
+			cursor: pointer;
 		}
 	}
 `;
@@ -33,12 +34,14 @@ export function SignInFooter() {
 		<StyledSignInFooter>
 			<div className="wrapper">
 				<ul className="links">
-					<Image src={logo} alt="logo" width={50} height={50} />
+					<Link href="/">
+						<Image src={logo} alt="logo" width={50} height={50} />
+					</Link>
 					<Link className="link" href="/">
-						<a>Home</a>
+						Home
 					</Link>
 					<Link className="link" href="/menu">
-						<a>Menu</a>
+						Menu
 					</Link>
 					<Button
 						style={{ borderRadius: "20px", fontWeight: "600" }}

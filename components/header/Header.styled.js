@@ -33,7 +33,6 @@ export const Nav = styled.nav`
 	}
 	.nav__btn {
 		display: none;
-		margin-right: 1rem;
 	}
 	.fa-bars {
 		display: block;

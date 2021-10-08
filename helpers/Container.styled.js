@@ -21,6 +21,9 @@ export const Container = styled.div`
 			opacity: 1;
 			transform: translateX(0);
 		}
+		.nav__find-store {
+			margin-top: 2rem;
+		}
 		.navbar__item {
 			display: block;
 			font-size: 1.3rem;
@@ -35,8 +38,7 @@ export const Container = styled.div`
 			border-top: rgba(214, 211, 214, 0.933) 1px solid;
 			padding-top: 2rem;
 			.nav__btn {
-				margin-left: 1rem;
-				margin-bottom: 2rem;
+				margin-right: 1rem;
 			}
 			.navbar__find-store {
 				display: flex;

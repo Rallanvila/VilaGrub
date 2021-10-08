@@ -8,8 +8,8 @@ import React, { Fragment } from "react";
 export function CardBanner() {
 	return (
 		<>
-			{bannerContent.map((c) => (
-				<React.Fragment key={c.id}>
+			{bannerContent.map((c, index) => (
+				<React.Fragment key={index}>
 					<Grid className="card__grid" bg={c.background}>
 						<div style={{ padding: "3rem 1rem" }}>
 							<h2 className="card__heading" style={c.color}>
