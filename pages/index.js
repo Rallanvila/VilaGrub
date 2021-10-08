@@ -21,10 +21,6 @@ export default function Home() {
 		<>
 			<Head>
 				<title>Vila's Grub Spot</title>
-				<link
-					rel="stylesheet"
-					href="https://pro.fontawesome.com/releases/v6.0.0-beta2/css/all.css"
-				/>
 			</Head>
 
 			<Header />

@@ -14,10 +14,6 @@ function HotCoffees() {
 		<>
 			<Head>
 				<title>Vila's Grub Spot | Hot Coffees</title>
-				<link
-					rel="stylesheet"
-					href="https://pro.fontawesome.com/releases/v6.0.0-beta2/css/all.css"
-				/>
 			</Head>
 			<Header />
 			<MenuGrid>
