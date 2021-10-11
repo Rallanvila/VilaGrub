@@ -7,6 +7,8 @@ import logo from "../../svg/logo.svg";
 import { Button } from "../Button";
 import Link from "next/link";
 import { FindStoreStyled } from "../FindStore.styled";
+import { MdLocationOn } from "react-icons/md";
+import { FaBars } from "react-icons/fa";
 
 export default function Header() {
 	return (
@@ -15,7 +17,7 @@ export default function Header() {
 				<Container>
 					<SpaceBetween>
 						<div className="nav__left">
-							<Link href="/">
+							<Link href="/" passHref>
 								<div className="logo" style={{ cursor: "pointer" }}>
 									<Image src={logo} alt="logo" width={50} height={50} />
 								</div>
@@ -32,15 +34,16 @@ export default function Header() {
 						</div>
 
 						<div className="nav__right">
-							<i
+							<FaBars
 								id="navMenuBars"
 								onClick={toggleMenu}
 								style={{ fontSize: "1.5rem", cursor: "pointer" }}
 								className="far fa-bars"
-							></i>
+							/>
 							<i className="fas fa-map-marker-alt"></i>
+							<MdLocationOn className="nav__btn" />
 							<span className="title">Find a store</span>
-							<Link href="/sign-in">
+							<Link href="/sign-in" passHref>
 								<Button className="nav__btn" border="#212529">
 									Sign In
 								</Button>
@@ -72,10 +75,10 @@ export default function Header() {
 							Join Now
 						</Button>
 						<FindStoreStyled>
-							<i
+							<MdLocationOn
 								className="fas fa-map-marker-alt"
 								style={{ fontSize: "1.5rem" }}
-							></i>
+							/>
 							<span className="title">Find a store</span>
 						</FindStoreStyled>
 					</div>

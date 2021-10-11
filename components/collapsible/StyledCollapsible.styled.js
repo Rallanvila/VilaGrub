@@ -8,6 +8,7 @@ export const StyledCollapsible = styled.div`
 		h2 {
 			font-size: 1.2rem;
 			margin-top: 0;
+			font-weight: 600;
 		}
 		i {
 			transition: transform 0.3s;
@@ -23,9 +24,7 @@ export const StyledCollapsible = styled.div`
 		}
 	}
 	a {
-		/* max-height: 0; */
 		overflow: hidden;
-		/* opacity: 0; */
 		transition: font-weight 0.15s;
 		color: black;
 		display: block;

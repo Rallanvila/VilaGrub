@@ -9,6 +9,9 @@ const FooterStyled = styled.footer`
 	padding: 1rem;
 	max-width: 1320px;
 	margin: 0 auto;
+	h2 {
+		font-weight: 600;
+	}
 `;
 
 function Footer() {

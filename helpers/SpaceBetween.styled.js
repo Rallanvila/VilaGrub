@@ -9,4 +9,8 @@ export const SpaceBetween = styled.div`
 		display: flex;
 		align-items: center;
 	}
+	.nav__right svg {
+		font-size: 1.5rem;
+		margin-right: 0.5rem;
+	}
 `;
