@@ -1,3 +1,4 @@
+import FixedBottomNavigation, { Cart } from "../components/Cart/Cart";
 import Footer from "../components/footer/Footer";
 import Header from "../components/header/Header";
 import { MenuItemDetailsBanner } from "../components/MenuItemDetails/MenuItemDetailsBanner";
@@ -11,6 +12,7 @@ export default function MenuItemDetails() {
 			<MenuItemDetailsDetails />
 			<Footer />
 			<Cart />
+			{/* <FixedBottomNavigation /> */}
 		</div>
 	);
 }
