@@ -10,6 +10,7 @@ export default function MenuItemDetails() {
 			<MenuItemDetailsBanner />
 			<MenuItemDetailsDetails />
 			<Footer />
+			<Cart />
 		</div>
 	);
 }
