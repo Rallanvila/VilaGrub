@@ -7,3 +7,7 @@ export default async (req, res) => {
 	// res.send("Hello world");
 	res.json({ test: "test" });
 };
+
+//Get Route
+
+//Post Route
