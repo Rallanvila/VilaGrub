@@ -1,6 +1,6 @@
 import "styled-components";
 import { Container } from "../../helpers/Container.styled";
-import { Nav } from "./Header.styled";
+import { Nav } from "./NavBar.styled";
 import { SpaceBetween } from "../../helpers/SpaceBetween.styled";
 import Image from "next/image";
 import logo from "../../svg/logo.svg";
@@ -10,7 +10,7 @@ import { FindStoreStyled } from "../FindStore.styled";
 import { MdLocationOn } from "react-icons/md";
 import { FaBars } from "react-icons/fa";
 
-export default function Header() {
+export default function NavBar() {
 	return (
 		<>
 			<Nav>
@@ -58,9 +58,9 @@ export default function Header() {
 
 			<Container>
 				<div className="navbar__expanded">
-					<a href="#" className="navbar__item">
-						Menu
-					</a>
+					<Link href="/menu" passHref>
+						<a className="navbar__item">Menu</a>
+					</Link>
 					<a href="#" className="navbar__item">
 						Rewards
 					</a>

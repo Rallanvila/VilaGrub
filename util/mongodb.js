@@ -1,12 +1,39 @@
-const MongoClient = require("mongodb").MongoClient;
-const assert = require("assert");
+import { MongoClient } from "mongodb";
 
-// Connection URL
-const url =
-	"mongodb://avila:$avila:av11221@$[hostlist]/sample_analytics?authSource=admin";
+let uri = process.env.MONGODB_URI;
+let dbName = process.env.MONGODB_DB;
 
-// Use connect method to connect to the Server
-MongoClient.connect(url, function (err, client) {
-	assert.equal(null, err);
-	client.close();
-});
+let cachedClient = null;
+let cachedDb = null;
+
+if (!uri) {
+	throw new Error(
+		"Please define the MONGODB_URI environment variable inside .env.local",
+	);
+}
+
+if (!dbName) {
+	throw new Error(
+		"Please define the MONGODB_DB environment variable inside .env.local",
+	);
+}
+
+export async function connectToDatabase() {
+	if (cachedClient && cachedDb) {
+		return { client: cachedClient, db: cachedDb };
+	}
+
+	const client = await MongoClient.connect(uri, {
+		useNewUrlParser: true,
+		useUnifiedTopology: true,
+	});
+
+	const db = await client.db(dbName);
+	//   db2: client.db('database name here') Example if you wanted to add another DB
+	//   db3: client.db('database name here') Example if you wanted to add another DB
+
+	cachedClient = client;
+	cachedDb = db;
+
+	return { client, db };
+}

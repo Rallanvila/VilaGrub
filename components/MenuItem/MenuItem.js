@@ -1,14 +1,49 @@
 import { Link } from "@mui/material";
 import Image from "next/image";
-import { StyledMenuItem } from "./StyledMenuItem.styled";
+import styled from "styled-components";
 
-function MenuItem({ item: { image, alt, label, page } }) {
+export default function MenuItem({ item: { imageUrl, alt, label, page } }) {
 	return (
 		<StyledMenuItem>
-			<Image className="image" src={image} alt={alt} width="112" height="112" />
+			<Image
+				className="image"
+				src={imageUrl}
+				alt={alt}
+				width="112"
+				height="112"
+			/>
 			<Link href={page}>{label}</Link>
 		</StyledMenuItem>
 	);
 }
 
-export default MenuItem;
+const StyledMenuItem = styled.div`
+	display: flex;
+	align-items: center;
+	margin-bottom: 1rem;
+	cursor: pointer;
+	.image {
+		border-radius: 50%;
+		object-position: center;
+		object-fit: cover;
+		width: 75px;
+		height: 75px;
+	}
+	a {
+		margin-left: 2rem;
+		font-size: 1rem;
+		font-weight: 500;
+		text-decoration: none;
+		color: #212529;
+		cursor: pointer;
+	}
+	@media screen and (min-width: 1000px) {
+		.image {
+			width: 112px;
+			height: 112px;
+		}
+		a {
+			font-size: 1.1rem;
+		}
+	}
+`;

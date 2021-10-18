@@ -1,26 +1,26 @@
-import { desserts } from "../../data/desserts";
-import { drinks } from "../../data/drinks";
-import { food } from "../../data/food";
+import { dessertCategories } from "../../data/dessertsCategories";
+import { drinkCategories } from "../../data/drinkCategories";
+import { foodCategories } from "../../data/foodCategories";
 import { SideMenuHeader } from "../../helpers/SideMenuHeader.styled";
-import { StyledSideMenu } from "./StyledSideMenu.styled";
+import styled from "styled-components";
 
-function SideMenu() {
+export default function SideMenu() {
 	return (
 		<StyledSideMenu>
 			<SideMenuHeader>Drinks</SideMenuHeader>
-			{drinks.map((item, index) => (
+			{drinkCategories.map((item, index) => (
 				<a href="#" key={index}>
 					{item.label}
 				</a>
 			))}
 			<SideMenuHeader>Food</SideMenuHeader>
-			{food.map((item, index) => (
+			{foodCategories.map((item, index) => (
 				<a href="#" key={index}>
 					{item.label}
 				</a>
 			))}
 			<SideMenuHeader>Deserts</SideMenuHeader>
-			{desserts.map((item, index) => (
+			{dessertCategories.map((item, index) => (
 				<a href="#" key={index}>
 					{item.label}
 				</a>
@@ -29,4 +29,16 @@ function SideMenu() {
 	);
 }
 
-export default SideMenu;
+const StyledSideMenu = styled.nav`
+	display: none;
+	@media screen and (min-width: 1008px) {
+		display: block;
+		a {
+			display: block;
+			font-weight: 600;
+			opacity: 0.7;
+			cursor: pointer;
+			margin-bottom: 2rem;
+		}
+	}
+`;

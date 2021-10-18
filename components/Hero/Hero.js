@@ -1,7 +1,7 @@
 import { Container } from "../../helpers/Container.styled";
 import { FlexCenter } from "../../helpers/FlexCenter.styled";
 
-function MainBanner() {
+function Hero() {
 	return (
 		<Container bg="#294442" color="white">
 			<FlexCenter>
@@ -14,4 +14,4 @@ function MainBanner() {
 	);
 }
 
-export default MainBanner;
+export default Hero;

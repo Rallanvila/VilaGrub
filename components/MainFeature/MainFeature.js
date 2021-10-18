@@ -5,7 +5,7 @@ import { Button } from "../Button";
 import bannerContent from "../../data/content-CardBanner";
 import React, { Fragment } from "react";
 
-export function CardBanner() {
+export default function MainFeature() {
 	return (
 		<>
 			{bannerContent.map((c, index) => (
