@@ -10,6 +10,10 @@ import { FindStoreStyled } from "../FindStore.styled";
 import { MdLocationOn } from "react-icons/md";
 import { FaBars } from "react-icons/fa";
 
+// -------------------------------------------
+// **  COMPONENT
+// -------------------------------------------
+
 export default function NavBar() {
 	return (
 		<>

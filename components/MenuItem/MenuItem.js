@@ -2,6 +2,10 @@ import { Link } from "@mui/material";
 import Image from "next/image";
 import styled from "styled-components";
 
+// -------------------------------------------
+// **  COMPONENT
+// -------------------------------------------
+
 export default function MenuItem({ item: { imageUrl, alt, label, page } }) {
 	return (
 		<StyledMenuItem>
@@ -16,6 +20,10 @@ export default function MenuItem({ item: { imageUrl, alt, label, page } }) {
 		</StyledMenuItem>
 	);
 }
+
+// -------------------------------------------
+// **  STYLED-COMPONENT
+// -------------------------------------------
 
 const StyledMenuItem = styled.div`
 	display: flex;

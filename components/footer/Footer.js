@@ -4,17 +4,10 @@ import FooterSocial from "./FooterSocial";
 import { data } from "../collapsible/data-collapsible";
 import styled from "styled-components";
 
-const FooterStyled = styled.footer`
-	width: 100%;
-	padding: 1rem;
-	max-width: 1320px;
-	margin: 0 auto;
-	h2 {
-		font-weight: 600;
-	}
-`;
-
-function Footer() {
+// -------------------------------------------
+// **  COMPONENT
+// -------------------------------------------
+export default function Footer() {
 	return (
 		<FooterStyled>
 			<StyledCollapsible>
@@ -34,4 +27,16 @@ function Footer() {
 	);
 }
 
-export default Footer;
+// -------------------------------------------
+// **  STYLED-COMPONENT
+// -------------------------------------------
+
+const FooterStyled = styled.footer`
+	width: 100%;
+	padding: 1rem;
+	max-width: 1320px;
+	margin: 0 auto;
+	h2 {
+		font-weight: 600;
+	}
+`;

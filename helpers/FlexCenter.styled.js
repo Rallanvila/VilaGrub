@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+// -------------------------------------------
+// **  STYLED-COMPONENT
+// -------------------------------------------
+
 export const FlexCenter = styled.div`
 	display: flex;
 	align-items: center;

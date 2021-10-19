@@ -4,42 +4,9 @@ import styled from "styled-components";
 import { useState } from "react";
 import React from "react";
 
-const Customizations = styled.div`
-	padding: 0 2rem;
-	p {
-		margin-bottom: 3rem;
-	}
-	input {
-		margin: 1rem;
-	}
-`;
-const Nutrition = styled.div`
-	padding: 0 3rem;
-	p {
-		margin-bottom: 3rem;
-	}
-	input {
-		margin: 1rem;
-	}
-	ul {
-		padding: 0;
-	}
-	li {
-		text-decoration: none;
-		padding: 0.5rem 0;
-		list-style: none;
-		border-top: 1px rgba(0, 0, 0, 0.2) solid;
-		border-bottom: 1px rgba(0, 0, 0, 0.2) solid;
-	}
-`;
-
-const NutritionTitle = styled.span`
-	font-weight: 600;
-	margin-right: 0.5rem;
-`;
-const NutritionTitleIndent = styled.span`
-	padding-left: 2rem;
-`;
+// -------------------------------------------
+// **  COMPONENT
+// -------------------------------------------
 
 export function MenuItemDetailsDetails() {
 	const [size, setSize] = React.useState("");
@@ -168,3 +135,44 @@ export function MenuItemDetailsDetails() {
 		</Grid>
 	);
 }
+
+// -------------------------------------------
+// **  STYLED-COMPONENT
+// -------------------------------------------
+
+const Customizations = styled.div`
+	padding: 0 2rem;
+	p {
+		margin-bottom: 3rem;
+	}
+	input {
+		margin: 1rem;
+	}
+`;
+const Nutrition = styled.div`
+	padding: 0 3rem;
+	p {
+		margin-bottom: 3rem;
+	}
+	input {
+		margin: 1rem;
+	}
+	ul {
+		padding: 0;
+	}
+	li {
+		text-decoration: none;
+		padding: 0.5rem 0;
+		list-style: none;
+		border-top: 1px rgba(0, 0, 0, 0.2) solid;
+		border-bottom: 1px rgba(0, 0, 0, 0.2) solid;
+	}
+`;
+
+const NutritionTitle = styled.span`
+	font-weight: 600;
+	margin-right: 0.5rem;
+`;
+const NutritionTitleIndent = styled.span`
+	padding-left: 2rem;
+`;

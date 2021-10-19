@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+// -------------------------------------------
+// **  STYLED-COMPONENT
+// -------------------------------------------
+
 export const SpaceBetween = styled.div`
 	display: flex;
 	justify-content: space-between;

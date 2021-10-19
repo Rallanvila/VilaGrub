@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+// -------------------------------------------
+// **  STYLED-COMPONENT
+// -------------------------------------------
+
 export const SignInNav = styled.nav`
 	width: 100%;
 	padding: 1rem 1rem;

@@ -14,6 +14,10 @@ import MainMenu from "../components/MainMenu/MainMenu";
 // 	},
 // };
 
+// -------------------------------------------
+// **  PAGE
+// -------------------------------------------
+
 export default function Menu() {
 	return (
 		<>

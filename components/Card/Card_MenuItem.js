@@ -4,6 +4,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineMinusCircle, AiOutlinePlusCircle } from "react-icons/ai";
 
+// -------------------------------------------
+// **  COMPONENT
+// -------------------------------------------
+
 export default function Card_MenuItem() {
 	return (
 		<Card style={{ width: "100%", position: "relative", padding: "1rem" }}>

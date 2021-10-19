@@ -1,13 +1,9 @@
 import { FormControl, FormHelperText, Input, InputLabel } from "@mui/material";
 import styled from "styled-components";
 
-const StyledPayment = styled.div`
-	position: absolute;
-	min-height: 500px;
-	bottom: 0;
-	right: 0;
-	left: 0;
-`;
+// -------------------------------------------
+// **  COMPONENT
+// -------------------------------------------
 
 export default function Payment() {
 	return (
@@ -26,3 +22,15 @@ export default function Payment() {
 		</StyledPayment>
 	);
 }
+
+// -------------------------------------------
+// **  STYLED-COMPONENT
+// -------------------------------------------
+
+const StyledPayment = styled.div`
+	position: absolute;
+	min-height: 500px;
+	bottom: 0;
+	right: 0;
+	left: 0;
+`;

@@ -3,6 +3,10 @@ import { Button } from "@mui/material";
 import styled from "styled-components";
 import { useState } from "react";
 
+// -------------------------------------------
+// **  COMPONENT
+// -------------------------------------------
+
 export function Cart() {
 	const [count, setCount] = useState(0);
 
@@ -35,6 +39,10 @@ export function Cart() {
 		</>
 	);
 }
+
+// -------------------------------------------
+// **  STYLED-COMPONENT
+// -------------------------------------------
 
 const StyledCart = styled.div`
 	width: 100%;

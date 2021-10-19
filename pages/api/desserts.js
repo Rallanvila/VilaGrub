@@ -1,7 +1,14 @@
-import { connectToDatabase } from "../../util/mongodb";
+import clientPromise from "../../lib/mongodb";
+// import { connectToDatabase } from "../../util/mongodb";
+
+// -------------------------------------------
+// **  API ROUTE
+// -------------------------------------------
 
 export default async (req, res) => {
-	const { db } = await connectToDatabase();
+	const client = await clientPromise;
+	const db = await client.db();
+	// const { db } = await connectToDatabase();
 
 	const desserts = await db
 		.collection("menu")

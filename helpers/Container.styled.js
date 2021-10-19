@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+// -------------------------------------------
+// **  STYLED-COMPONENT
+// -------------------------------------------
+
 export const Container = styled.div`
 	max-width: 100%;
 	width: 1320px;

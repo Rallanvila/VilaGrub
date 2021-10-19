@@ -6,15 +6,9 @@ import { LoginCredentials } from "../components/LoginCredentials/LoginCredential
 import { SignInWrapper } from "../helpers/SignInWrapper.styled";
 import { SignInFooter } from "../components/SignInFooter/SignInFooter";
 
-export const theme = {
-	colors: {
-		brandBlue: "#294442",
-		brandBrown: "#c69250",
-		brandGreen: "#89a525",
-		brandGrey: "#789494",
-		dark: "#212529",
-	},
-};
+// -------------------------------------------
+// **  PAGE
+// -------------------------------------------
 
 export default function Menu() {
 	return (

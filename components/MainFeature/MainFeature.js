@@ -5,6 +5,10 @@ import { Button } from "../Button";
 import bannerContent from "../../data/content-CardBanner";
 import React, { Fragment } from "react";
 
+// -------------------------------------------
+// **  COMPONENT
+// -------------------------------------------
+
 export default function MainFeature() {
 	return (
 		<>

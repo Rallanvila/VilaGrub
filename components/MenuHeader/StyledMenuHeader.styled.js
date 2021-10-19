@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+// -------------------------------------------
+// **  STYLED-COMPONENT
+// -------------------------------------------
+
 export const StyledMenuHeader = styled.h2`
 	display: block;
 	width: 100%;

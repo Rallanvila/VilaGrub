@@ -1,6 +1,10 @@
 import { ObjectId } from "mongodb";
 import { connectToDatabase } from "../../../util/mongodb";
 
+// -------------------------------------------
+// **  API ROUTE
+// -------------------------------------------
+
 export default async function handler(req, res) {
 	const { db } = await connectToDatabase();
 	const { MenuItemId } = req.query;

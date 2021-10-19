@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+// -------------------------------------------
+// **  STYLED-COMPONENT
+// -------------------------------------------
+
 export const MenuGrid = styled.div`
 	width: 100%;
 	max-width: 1320px;

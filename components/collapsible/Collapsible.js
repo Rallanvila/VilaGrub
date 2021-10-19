@@ -2,6 +2,9 @@ import { StyledCollapsible } from "./StyledCollapsible.styled";
 import { useState } from "react";
 import { FaChevronDown, FaChevronRight } from "react-icons/fa";
 
+// -------------------------------------------
+// **  COMPONENT
+// -------------------------------------------
 export default function Collapsible({
 	item: { title, section1, section2, section3 },
 }) {

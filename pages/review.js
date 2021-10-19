@@ -9,6 +9,65 @@ import { AiOutlineMinusCircle, AiOutlinePlusCircle } from "react-icons/ai";
 import Card_MenuItem from "../components/Card/Card_MenuItem";
 import Payment from "../components/Payment/Payment";
 
+// -------------------------------------------
+// **  PAGE
+// -------------------------------------------
+
+export default function Review() {
+	return (
+		<Grid
+			style={{
+				maxWidth: "100%",
+				justifyItems: "flex-start",
+				alignItems: "flex-start",
+				margin: "0",
+			}}
+		>
+			<LeftSide>
+				<Header>
+					<Link href="/">
+						<Image src={logo} alt="logo" width={75} height={75} />
+					</Link>
+					<Header>
+						<BsChevronLeft />
+						<span>Back to Menu</span>
+					</Header>
+				</Header>
+				<Body>
+					<div>
+						<h2>Review Order (Cart State)</h2>
+						<p>Prep time: 3-6min</p>
+						<span>Pickup store</span>
+						<h3>University Pkwy & Tuttle</h3>
+					</div>
+				</Body>
+			</LeftSide>
+
+			<ReviewOrder>
+				<Card_MenuItem />
+				<Payment />
+			</ReviewOrder>
+			<Button
+				size="large"
+				color="success"
+				variant="contained"
+				style={{
+					position: "absolute",
+					bottom: "2rem",
+					right: "2rem",
+					borderRadius: "20px",
+				}}
+			>
+				Cart Price
+			</Button>
+		</Grid>
+	);
+}
+
+// -------------------------------------------
+// **  STYLED-COMPONENTS
+// -------------------------------------------
+
 const Header = styled.div`
 	display: flex;
 	justify-content: center;
@@ -69,54 +128,3 @@ const ReviewOrder = styled.div`
 	align-items: center;
 	position: relative;
 `;
-
-export default function Review() {
-	return (
-		<Grid
-			style={{
-				maxWidth: "100%",
-				justifyItems: "flex-start",
-				alignItems: "flex-start",
-				margin: "0",
-			}}
-		>
-			<LeftSide>
-				<Header>
-					<Link href="/">
-						<Image src={logo} alt="logo" width={75} height={75} />
-					</Link>
-					<Header>
-						<BsChevronLeft />
-						<span>Back to Menu</span>
-					</Header>
-				</Header>
-				<Body>
-					<div>
-						<h2>Review Order (Cart State)</h2>
-						<p>Prep time: 3-6min</p>
-						<span>Pickup store</span>
-						<h3>University Pkwy & Tuttle</h3>
-					</div>
-				</Body>
-			</LeftSide>
-
-			<ReviewOrder>
-				<Card_MenuItem />
-				<Payment />
-			</ReviewOrder>
-			<Button
-				size="large"
-				color="success"
-				variant="contained"
-				style={{
-					position: "absolute",
-					bottom: "2rem",
-					right: "2rem",
-					borderRadius: "20px",
-				}}
-			>
-				Cart Price
-			</Button>
-		</Grid>
-	);
-}

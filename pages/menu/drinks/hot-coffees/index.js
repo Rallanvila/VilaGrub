@@ -7,6 +7,10 @@ import { MenuGrid } from "../../../../helpers/MenuGrid.styled";
 import SideMenu from "../../../../components/sidemenu/sidemenu";
 import { connectToDatabase } from "../../../../util/mongodb";
 
+// -------------------------------------------
+// **  COMPONENT
+// -------------------------------------------
+
 export default function HotCoffees({ drinks }) {
 	return (
 		<>
@@ -34,6 +38,10 @@ export default function HotCoffees({ drinks }) {
 		</>
 	);
 }
+
+// -------------------------------------------
+// **  PULL PROPS FROM DB
+// -------------------------------------------
 
 export async function getStaticProps() {
 	const { db } = await connectToDatabase();

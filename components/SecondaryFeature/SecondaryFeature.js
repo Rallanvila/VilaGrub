@@ -6,6 +6,10 @@ import duoCardContent from "../../data/content-DuoCard";
 import { ImageContainer } from "../../helpers/ImageContainer.styled";
 import Image from "next/image";
 
+// -------------------------------------------
+// **  COMPONENT
+// -------------------------------------------
+
 export default function SecondaryFeature() {
 	return (
 		<React.Fragment>

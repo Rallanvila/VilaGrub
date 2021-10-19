@@ -1,5 +1,9 @@
 import { connectToDatabase } from "../../util/mongodb";
 
+// -------------------------------------------
+// **  API ROUTE
+// -------------------------------------------
+
 export default async (req, res) => {
 	const { db } = await connectToDatabase();
 

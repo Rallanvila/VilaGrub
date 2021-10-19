@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+// -------------------------------------------
+// **  STYLED-COMPONENT
+// -------------------------------------------
+
 export const Button = styled.a`
 	border-radius: 20px;
 	transition: opacity 0.15s, transform 0.15s;

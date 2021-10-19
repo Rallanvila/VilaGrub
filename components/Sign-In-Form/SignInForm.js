@@ -1,6 +1,10 @@
 import { Button, Card, CardContent, TextField } from "@mui/material";
 import { StyledSignInForm } from "./StyledSignInHeader.styled";
 
+// -------------------------------------------
+// **  COMPONENT
+// -------------------------------------------
+
 export default function SignInForm() {
 	return (
 		<Card

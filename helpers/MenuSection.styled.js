@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+// -------------------------------------------
+// **  STYLED-COMPONENT
+// -------------------------------------------
+
 export const MenuSection = styled.div`
 	margin: 1rem 0 4rem;
 	@media screen and (min-width: 763px) {

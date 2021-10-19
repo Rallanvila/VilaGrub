@@ -1,6 +1,9 @@
 import styled from "styled-components";
 import { FaFacebookF, FaInstagram, FaYoutube, FaTwitter } from "react-icons/fa";
 
+// -------------------------------------------
+// **  STYLED-COMPONENT
+// -------------------------------------------
 const StyledFooterSocial = styled.div`
   display: flex;
 		margin: 2rem 0;

@@ -1,7 +1,11 @@
 import { Container } from "../../helpers/Container.styled";
 import { FlexCenter } from "../../helpers/FlexCenter.styled";
 
-function Hero() {
+// -------------------------------------------
+// **  COMPONENT
+// -------------------------------------------
+
+export default function Hero() {
 	return (
 		<Container bg="#294442" color="white">
 			<FlexCenter>
@@ -13,5 +17,3 @@ function Hero() {
 		</Container>
 	);
 }
-
-export default Hero;

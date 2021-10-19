@@ -4,6 +4,10 @@ import { foodCategories } from "../../data/foodCategories";
 import { SideMenuHeader } from "../../helpers/SideMenuHeader.styled";
 import styled from "styled-components";
 
+// -------------------------------------------
+// **  COMPONENT
+// -------------------------------------------
+
 export default function SideMenu() {
 	return (
 		<StyledSideMenu>
@@ -28,6 +32,9 @@ export default function SideMenu() {
 		</StyledSideMenu>
 	);
 }
+// -------------------------------------------
+// **  STYLED-COMPONENT
+// -------------------------------------------
 
 const StyledSideMenu = styled.nav`
 	display: none;

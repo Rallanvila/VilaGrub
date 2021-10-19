@@ -6,6 +6,10 @@ import { foodCategories } from "../../data/foodCategories";
 import { dessertCategories } from "../../data/dessertsCategories";
 import { MenuSectionGrid } from "../../helpers/MenuSectionGrid.styled";
 
+// -------------------------------------------
+// **  COMPONENT
+// -------------------------------------------
+
 export default function MainMenu() {
 	return (
 		<>

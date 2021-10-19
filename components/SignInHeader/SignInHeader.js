@@ -3,6 +3,10 @@ import Image from "next/image";
 import { SignInNav } from "../../helpers/SignInNav.styled";
 import { Link } from "@mui/material";
 
+// -------------------------------------------
+// **  COMPONENT
+// -------------------------------------------
+
 export default function SignInHeader() {
 	return (
 		<div>

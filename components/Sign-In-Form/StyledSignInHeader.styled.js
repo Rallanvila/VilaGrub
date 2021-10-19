@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+// -------------------------------------------
+// **  STYLED-COMPONENT
+// -------------------------------------------
+
 export const StyledSignInForm = styled.form`
 	display: flex;
 	align-items: center;

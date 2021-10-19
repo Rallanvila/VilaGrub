@@ -14,6 +14,10 @@ import SecondaryFeature from "../components/SecondaryFeature/SecondaryFeature";
 // 	},
 // };
 
+// -------------------------------------------
+// **  PAGE
+// -------------------------------------------
+
 export default function Home() {
 	return (
 		<>
