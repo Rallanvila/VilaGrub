@@ -1,6 +1,28 @@
 import { useRouter } from "next/dist/client/router";
+import clientPromise from "../lib/mongodb";
 
-export default function Test() {
+// -------------------------------------------
+// **  SETTING PATH
+// -------------------------------------------
+
+export async function getStaticPaths() {
+	const client = await clientPromise;
+	const menuItemId = await client.db();
+
+	const paths = menuItemId.map((id) => console.log({ id: menuItemId._id }));
+	return {
+		paths: [
+			{ params: { id: menuItemId._id } }, // See the "paths" section below
+		],
+		fallback: false,
+	};
+}
+
+// -------------------------------------------
+// **  COMPONENT
+// -------------------------------------------
+
+export default function Test({ itemId }) {
 	const router = useRouter();
 	const { test } = router.query;
 	return (
@@ -18,4 +40,19 @@ export default function Test() {
 			</span>
 		</h1>
 	);
+}
+
+// -------------------------------------------
+// **  DB CALL
+// -------------------------------------------
+
+export async function getStaticProps({ params }) {
+	const client = await clientPromise;
+	const db = await client.db();
+
+	const itemId = await db.collection("menu").find().toArray();
+
+	return {
+		props: { itemId: JSON.parse(JSON.stringify(itemId)) },
+	};
 }

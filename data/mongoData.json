@@ -1,0 +1,652 @@
+[{
+  "_id": {
+    "$oid": "61698984bba690376a17d513"
+  },
+  "title": "Esspresso",
+  "category": "hot-coffee",
+  "size": [
+    "small",
+    "medium",
+    "large"
+  ],
+  "addIns": [
+    "Oatmilk",
+    "Sweet Cream",
+    "Nonfat Milk",
+    "Whole Milk",
+    "Half-Half",
+    "Heavy-Cream",
+    "Almond Milk"
+  ],
+  "flavors": [
+    "Brown Sugar",
+    "Caramel Syrup",
+    "Cinnamon Dolce Syrup",
+    "Vanilla Syrup",
+    "Sugar Free Vanilla"
+  ],
+  "sweeteners": [
+    "Sugar",
+    "Honey",
+    "Splenda",
+    "Classic Syrup"
+  ],
+  "imageUrl": "https://images.pexels.com/photos/685527/pexels-photo-685527.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+  "alt": "Esspresso",
+  "label": "Esspresso",
+  "page": "/"
+},{
+  "_id": {
+    "$oid": "61698984bba690376a17d521"
+  },
+  "title": "French Fries",
+  "category": "side",
+  "imageUrl": "https://images.pexels.com/photos/1583884/pexels-photo-1583884.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+  "alt": "French Fries",
+  "label": "French Fries",
+  "page": "/"
+},{
+  "_id": {
+    "$oid": "61698984bba690376a17d523"
+  },
+  "title": "Onion Rings",
+  "category": "side",
+  "imageUrl": "https://images.pexels.com/photos/1583884/pexels-photo-1583884.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+  "alt": "Onion Rings",
+  "label": "Onion Rings",
+  "page": "/"
+},{
+  "_id": {
+    "$oid": "61698984bba690376a17d512"
+  },
+  "title": "Cappuccino",
+  "category": "hot-coffee",
+  "size": [
+    "small",
+    "medium",
+    "large"
+  ],
+  "addIns": [
+    "Oatmilk",
+    "Sweet Cream",
+    "Nonfat Milk",
+    "Whole Milk",
+    "Half-Half",
+    "Heavy-Cream",
+    "Almond Milk"
+  ],
+  "flavors": [
+    "Brown Sugar",
+    "Caramel Syrup",
+    "Cinnamon Dolce Syrup",
+    "Vanilla Syrup",
+    "Sugar Free Vanilla"
+  ],
+  "sweeteners": [
+    "Sugar",
+    "Honey",
+    "Splenda",
+    "Classic Syrup"
+  ],
+  "imageUrl": "https://images.pexels.com/photos/9009818/pexels-photo-9009818.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+  "alt": "Cappuccino",
+  "label": "Cappuccino",
+  "page": "/"
+},{
+  "_id": {
+    "$oid": "61698984bba690376a17d51f"
+  },
+  "title": "Cajun Sandwich",
+  "category": "sandwich",
+  "size": [
+    "junior",
+    "regular"
+  ],
+  "addIns": [
+    "Plain",
+    "Mayo",
+    "Ketchup",
+    "Mustard",
+    "Onion",
+    "Grilled Onion",
+    "Relish",
+    "Lettuce",
+    "Grilled Mushrooms",
+    "Green Peppers",
+    "Pickles",
+    "Hot Sauce",
+    "Jalepenos Peppers"
+  ],
+  "imageUrl": "https://images.pexels.com/photos/5006444/pexels-photo-5006444.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+  "alt": "Cajun Sandwich",
+  "label": "Cajun Sandwich",
+  "page": "/"
+},{
+  "_id": {
+    "$oid": "61698984bba690376a17d520"
+  },
+  "title": "Cobb Salad",
+  "category": "salad",
+  "size": [
+    "junior",
+    "regular"
+  ],
+  "addIns": [
+    "Plain",
+    "Mayo",
+    "Ketchup",
+    "Mustard",
+    "Onion",
+    "Grilled Onion",
+    "Relish",
+    "Lettuce",
+    "Grilled Mushrooms",
+    "Green Peppers",
+    "Pickles",
+    "Hot Sauce",
+    "Jalepenos Peppers"
+  ],
+  "imageUrl": "https://images.pexels.com/photos/5006444/pexels-photo-5006444.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+  "alt": "Cobb Salad",
+  "label": "Cobb Salad",
+  "page": "/"
+},{
+  "_id": {
+    "$oid": "61698984bba690376a17d518"
+  },
+  "title": "Hot Tea",
+  "category": "hot-tea",
+  "size": [
+    "small",
+    "medium",
+    "large"
+  ],
+  "addIns": [
+    "Oatmilk",
+    "Sweet Cream",
+    "Nonfat Milk",
+    "Whole Milk",
+    "Half-Half",
+    "Heavy-Cream",
+    "Almond Milk"
+  ],
+  "flavors": [
+    "Brown Sugar",
+    "Caramel Syrup",
+    "Cinnamon Dolce Syrup",
+    "Vanilla Syrup",
+    "Sugar Free Vanilla"
+  ],
+  "sweeteners": [
+    "Sugar",
+    "Honey",
+    "Splenda",
+    "Classic Syrup"
+  ],
+  "imageUrl": "https://images.pexels.com/photos/3551717/pexels-photo-3551717.png?auto=compress&cs=tinysrgb&dpr=1&w=500",
+  "alt": "Hot Tea",
+  "label": "Hot Tea",
+  "page": "/"
+},{
+  "_id": {
+    "$oid": "61698984bba690376a17d525"
+  },
+  "title": "Strawberry Milk Shake",
+  "category": "milk-shake",
+  "imageUrl": "https://images.pexels.com/photos/1583884/pexels-photo-1583884.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+  "alt": "Strawberry Milk Shake",
+  "label": "Strawberry Milk Shake",
+  "page": "/"
+},{
+  "_id": {
+    "$oid": "61698984bba690376a17d526"
+  },
+  "title": "Chocolate Milk Shake",
+  "category": "milk-shake",
+  "imageUrl": "https://images.pexels.com/photos/1583884/pexels-photo-1583884.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+  "alt": "Chocolate Milk Shake",
+  "label": "Chocolate Milk Shake",
+  "page": "/"
+},{
+  "_id": {
+    "$oid": "61698984bba690376a17d514"
+  },
+  "title": "Latte",
+  "category": "hot-coffee",
+  "size": [
+    "small",
+    "medium",
+    "large"
+  ],
+  "addIns": [
+    "Oatmilk",
+    "Sweet Cream",
+    "Nonfat Milk",
+    "Whole Milk",
+    "Half-Half",
+    "Heavy-Cream",
+    "Almond Milk"
+  ],
+  "flavors": [
+    "Brown Sugar",
+    "Caramel Syrup",
+    "Cinnamon Dolce Syrup",
+    "Vanilla Syrup",
+    "Sugar Free Vanilla"
+  ],
+  "sweeteners": [
+    "Sugar",
+    "Honey",
+    "Splenda",
+    "Classic Syrup"
+  ],
+  "imageUrl": "https://images.pexels.com/photos/3551717/pexels-photo-3551717.png?auto=compress&cs=tinysrgb&dpr=1&w=500",
+  "alt": "Latte",
+  "label": "Latte",
+  "page": "/"
+},{
+  "_id": {
+    "$oid": "61698984bba690376a17d51d"
+  },
+  "title": "Jalepeno Hamburger",
+  "category": "hamburger",
+  "size": [
+    "junior",
+    "regular"
+  ],
+  "addIns": [
+    "Plain",
+    "Mayo",
+    "Ketchup",
+    "Mustard",
+    "Onion",
+    "Grilled Onion",
+    "Relish",
+    "Lettuce",
+    "Grilled Mushrooms",
+    "Green Peppers",
+    "Pickles",
+    "Hot Sauce",
+    "Jalepenos Peppers"
+  ],
+  "bun": [
+    "bun",
+    "lettuce wrap"
+  ],
+  "imageUrl": "https://images.pexels.com/photos/1633578/pexels-photo-1633578.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+  "alt": "Hamburger",
+  "label": "Hamburger",
+  "page": "/"
+},{
+  "_id": {
+    "$oid": "61698984bba690376a17d522"
+  },
+  "title": "Sweet Potato Fries",
+  "category": "side",
+  "imageUrl": "https://images.pexels.com/photos/1583884/pexels-photo-1583884.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+  "alt": "Sweet Potato Fries",
+  "label": "Sweet Potato Fries",
+  "page": "/"
+},{
+  "_id": {
+    "$oid": "61698984bba690376a17d519"
+  },
+  "title": "Hot Sweet Tea",
+  "category": "hot-tea",
+  "size": [
+    "small",
+    "medium",
+    "large"
+  ],
+  "addIns": [
+    "Oatmilk",
+    "Sweet Cream",
+    "Nonfat Milk",
+    "Whole Milk",
+    "Half-Half",
+    "Heavy-Cream",
+    "Almond Milk"
+  ],
+  "flavors": [
+    "Brown Sugar",
+    "Caramel Syrup",
+    "Cinnamon Dolce Syrup",
+    "Vanilla Syrup",
+    "Sugar Free Vanilla"
+  ],
+  "sweeteners": [
+    "Sugar",
+    "Honey",
+    "Splenda",
+    "Classic Syrup"
+  ],
+  "imageUrl": "https://images.pexels.com/photos/3551717/pexels-photo-3551717.png?auto=compress&cs=tinysrgb&dpr=1&w=500",
+  "alt": "Hot Sweet Tea",
+  "label": "Hot Sweet Tea",
+  "page": "/"
+},{
+  "_id": {
+    "$oid": "61698984bba690376a17d516"
+  },
+  "title": "Iced Caramel Coffee",
+  "category": "iced-coffee",
+  "size": [
+    "small",
+    "medium",
+    "large"
+  ],
+  "addIns": [
+    "Oatmilk",
+    "Sweet Cream",
+    "Nonfat Milk",
+    "Whole Milk",
+    "Half-Half",
+    "Heavy-Cream",
+    "Almond Milk"
+  ],
+  "flavors": [
+    "Brown Sugar",
+    "Caramel Syrup",
+    "Cinnamon Dolce Syrup",
+    "Vanilla Syrup",
+    "Sugar Free Vanilla"
+  ],
+  "sweeteners": [
+    "Sugar",
+    "Honey",
+    "Splenda",
+    "Classic Syrup"
+  ],
+  "imageUrl": "https://images.pexels.com/photos/3551717/pexels-photo-3551717.png?auto=compress&cs=tinysrgb&dpr=1&w=500",
+  "alt": "Iced Caramel Coffee",
+  "label": "Iced Caramel Coffee",
+  "page": "/"
+},{
+  "_id": {
+    "$oid": "61698984bba690376a17d517"
+  },
+  "title": "Iced Vanilla Coffee",
+  "category": "iced-coffee",
+  "size": [
+    "small",
+    "medium",
+    "large"
+  ],
+  "addIns": [
+    "Oatmilk",
+    "Sweet Cream",
+    "Nonfat Milk",
+    "Whole Milk",
+    "Half-Half",
+    "Heavy-Cream",
+    "Almond Milk"
+  ],
+  "flavors": [
+    "Brown Sugar",
+    "Caramel Syrup",
+    "Cinnamon Dolce Syrup",
+    "Vanilla Syrup",
+    "Sugar Free Vanilla"
+  ],
+  "sweeteners": [
+    "Sugar",
+    "Honey",
+    "Splenda",
+    "Classic Syrup"
+  ],
+  "imageUrl": "https://images.pexels.com/photos/3551717/pexels-photo-3551717.png?auto=compress&cs=tinysrgb&dpr=1&w=500",
+  "alt": "Iced Vanilla Coffee",
+  "label": "Iced Vanilla Coffee",
+  "page": "/"
+},{
+  "_id": {
+    "$oid": "61698984bba690376a17d524"
+  },
+  "title": "Side Salad",
+  "category": "side",
+  "imageUrl": "https://images.pexels.com/photos/1583884/pexels-photo-1583884.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+  "alt": "Side Salad",
+  "label": "Side Salad",
+  "page": "/"
+},{
+  "_id": {
+    "$oid": "61698984bba690376a17d511"
+  },
+  "title": "Caffe Americano",
+  "category": "hot-coffee",
+  "size": [
+    "small",
+    "medium",
+    "large"
+  ],
+  "addIns": [
+    "Oatmilk",
+    "Sweet Cream",
+    "Nonfat Milk",
+    "Whole Milk",
+    "Half-Half",
+    "Heavy-Cream",
+    "Almond Milk"
+  ],
+  "flavors": [
+    "Brown Sugar",
+    "Caramel Syrup",
+    "Cinnamon Dolce Syrup",
+    "Vanilla Syrup",
+    "Sugar Free Vanilla"
+  ],
+  "sweeteners": [
+    "Sugar",
+    "Honey",
+    "Splenda",
+    "Classic Syrup"
+  ],
+  "imageUrl": "https://images.pexels.com/photos/4195602/pexels-photo-4195602.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+  "alt": "Cafe Americano",
+  "label": "Cafe Americano",
+  "page": "/menu-item-details",
+  "alias": "caffe-americano"
+},{
+  "_id": {
+    "$oid": "61698984bba690376a17d51c"
+  },
+  "title": "Hamburger",
+  "category": "hamburger",
+  "size": [
+    "junior",
+    "regular"
+  ],
+  "addIns": [
+    "Plain",
+    "Mayo",
+    "Ketchup",
+    "Mustard",
+    "Onion",
+    "Grilled Onion",
+    "Relish",
+    "Lettuce",
+    "Grilled Mushrooms",
+    "Green Peppers",
+    "Pickles",
+    "Hot Sauce",
+    "Jalepenos Peppers"
+  ],
+  "bun": [
+    "bun",
+    "lettuce wrap"
+  ],
+  "imageUrl": "https://images.pexels.com/photos/1633578/pexels-photo-1633578.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+  "alt": "Hamburger",
+  "label": "Hamburger",
+  "page": "/"
+},{
+  "_id": {
+    "$oid": "61698984bba690376a17d527"
+  },
+  "title": "Vanilla Milk Shake",
+  "category": "milk-shake",
+  "imageUrl": "https://images.pexels.com/photos/1583884/pexels-photo-1583884.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+  "alt": "Vanilla Milk Shake",
+  "label": "Vanilla Milk Shake",
+  "page": "/"
+},{
+  "_id": {
+    "$oid": "61698984bba690376a17d51b"
+  },
+  "title": "Iced Sweet Tea",
+  "category": "iced-tea",
+  "size": [
+    "small",
+    "medium",
+    "large"
+  ],
+  "addIns": [
+    "Oatmilk",
+    "Sweet Cream",
+    "Nonfat Milk",
+    "Whole Milk",
+    "Half-Half",
+    "Heavy-Cream",
+    "Almond Milk"
+  ],
+  "flavors": [
+    "Brown Sugar",
+    "Caramel Syrup",
+    "Cinnamon Dolce Syrup",
+    "Vanilla Syrup",
+    "Sugar Free Vanilla"
+  ],
+  "sweeteners": [
+    "Sugar",
+    "Honey",
+    "Splenda",
+    "Classic Syrup"
+  ],
+  "imageUrl": "https://images.pexels.com/photos/3551717/pexels-photo-3551717.png?auto=compress&cs=tinysrgb&dpr=1&w=500",
+  "alt": "Iced Sweet Tea",
+  "label": "Iced Sweet Tea",
+  "page": "/"
+},{
+  "_id": {
+    "$oid": "61698984bba690376a17d51a"
+  },
+  "title": "Iced Tea",
+  "category": "iced-tea",
+  "size": [
+    "small",
+    "medium",
+    "large"
+  ],
+  "addIns": [
+    "Oatmilk",
+    "Sweet Cream",
+    "Nonfat Milk",
+    "Whole Milk",
+    "Half-Half",
+    "Heavy-Cream",
+    "Almond Milk"
+  ],
+  "flavors": [
+    "Brown Sugar",
+    "Caramel Syrup",
+    "Cinnamon Dolce Syrup",
+    "Vanilla Syrup",
+    "Sugar Free Vanilla"
+  ],
+  "sweeteners": [
+    "Sugar",
+    "Honey",
+    "Splenda",
+    "Classic Syrup"
+  ],
+  "imageUrl": "https://images.pexels.com/photos/3551717/pexels-photo-3551717.png?auto=compress&cs=tinysrgb&dpr=1&w=500",
+  "alt": "Iced Tea",
+  "label": "Iced Tea",
+  "page": "/"
+},{
+  "_id": {
+    "$oid": "61698984bba690376a17d515"
+  },
+  "title": "Iced Coffee",
+  "category": "iced-coffee",
+  "size": [
+    "small",
+    "medium",
+    "large"
+  ],
+  "addIns": [
+    "Oatmilk",
+    "Sweet Cream",
+    "Nonfat Milk",
+    "Whole Milk",
+    "Half-Half",
+    "Heavy-Cream",
+    "Almond Milk"
+  ],
+  "flavors": [
+    "Brown Sugar",
+    "Caramel Syrup",
+    "Cinnamon Dolce Syrup",
+    "Vanilla Syrup",
+    "Sugar Free Vanilla"
+  ],
+  "sweeteners": [
+    "Sugar",
+    "Honey",
+    "Splenda",
+    "Classic Syrup"
+  ],
+  "imageUrl": "https://images.pexels.com/photos/3551717/pexels-photo-3551717.png?auto=compress&cs=tinysrgb&dpr=1&w=500",
+  "alt": "Iced Coffee",
+  "label": "Iced Coffee",
+  "page": "/"
+},{
+  "_id": {
+    "$oid": "61698984bba690376a17d51e"
+  },
+  "title": "Cuban Sandwich",
+  "category": "sandwich",
+  "size": [
+    "junior",
+    "regular"
+  ],
+  "addIns": [
+    "Plain",
+    "Mayo",
+    "Ketchup",
+    "Mustard",
+    "Onion",
+    "Grilled Onion",
+    "Relish",
+    "Lettuce",
+    "Grilled Mushrooms",
+    "Green Peppers",
+    "Pickles",
+    "Hot Sauce",
+    "Jalepenos Peppers"
+  ],
+  "imageUrl": "https://images.pexels.com/photos/5006444/pexels-photo-5006444.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+  "alt": "Cuban Sandwich",
+  "label": "Cuban Sandwich",
+  "page": "/"
+},{
+  "_id": {
+    "$oid": "61698984bba690376a17d529"
+  },
+  "title": "Reeses Pb Cup Milk Shake",
+  "category": "milk-shake",
+  "imageUrl": "https://images.pexels.com/photos/1583884/pexels-photo-1583884.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+  "alt": "Reeses Pb Cup Milk Shake",
+  "label": "Reeses Pb Cup Milk Shake",
+  "page": "/"
+},{
+  "_id": {
+    "$oid": "61698984bba690376a17d528"
+  },
+  "title": "Oreo Milk Shake",
+  "category": "milk-shake",
+  "imageUrl": "https://images.pexels.com/photos/1583884/pexels-photo-1583884.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+  "alt": "Oreo Milk Shake",
+  "label": "Oreo Milk Shake",
+  "page": "/"
+}]
