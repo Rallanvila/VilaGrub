@@ -13,7 +13,7 @@ export default function SideMenu() {
 		<StyledSideMenu>
 			<SideMenuHeader>Drinks</SideMenuHeader>
 			{drinkCategories.map((item, index) => (
-				<a href="#" key={index}>
+				<a href={item.page} key={index}>
 					{item.label}
 				</a>
 			))}

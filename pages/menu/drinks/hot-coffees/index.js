@@ -5,7 +5,7 @@ import { MenuSectionGrid } from "../../../../helpers/MenuSectionGrid.styled";
 import MenuItem from "../../../../components/MenuItem/MenuItem";
 import { MenuGrid } from "../../../../helpers/MenuGrid.styled";
 import SideMenu from "../../../../components/sidemenu/sidemenu";
-import { connectToDatabase } from "../../../../util/mongodb";
+import clientPromise from "../../../../lib/mongodb";
 
 // -------------------------------------------
 // **  COMPONENT
@@ -28,9 +28,6 @@ export default function HotCoffees({ drinks }) {
 							{drinks.map((item, index) => (
 								<MenuItem key={index} item={item} />
 							))}
-							{/* {hotCoffees.map((item, index) => (
-								<MenuItem key={index} item={item} />
-							))} */}
 						</MenuSectionGrid>
 					</MenuSection>
 				</div>
@@ -40,21 +37,21 @@ export default function HotCoffees({ drinks }) {
 }
 
 // -------------------------------------------
-// **  PULL PROPS FROM DB
+// **  DB CALL
 // -------------------------------------------
 
 export async function getStaticProps() {
-	const { db } = await connectToDatabase();
-
+	// Creates connection to DB in cloud
+	const client = await clientPromise;
+	const db = await client.db();
+	// Query the DB with what you want to pull
 	const drinks = await db
 		.collection("menu")
 		.find({
 			category: "hot-coffee",
 		})
 		.toArray();
-
-	// const hotCoffees = JSON.parse(JSON.stringify(drinks))
-
+	// Return the data in JSON format to map/destructure.
 	return {
 		props: {
 			drinks: JSON.parse(JSON.stringify(drinks)),
