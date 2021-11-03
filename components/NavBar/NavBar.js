@@ -9,12 +9,16 @@ import Link from "next/link";
 import { FindStoreStyled } from "../FindStore.styled";
 import { MdLocationOn } from "react-icons/md";
 import { FaBars } from "react-icons/fa";
+import { UserContext } from "../../lib/context";
+import { useContext } from "react";
 
 // -------------------------------------------
 // **  COMPONENT
 // -------------------------------------------
 
 export default function NavBar() {
+	const { user, username } = useContext(UserContext);
+
 	return (
 		<>
 			<Nav>
