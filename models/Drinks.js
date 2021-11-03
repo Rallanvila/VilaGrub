@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-export const drinkSchema = new mongoose.Schema({
+const drinkSchema = new mongoose.Schema({
 	name: {
 		type: String,
 		required: [true, "Please add a name"],
@@ -67,9 +67,9 @@ export const drinkSchema = new mongoose.Schema({
 	date: { type: Date, default: Date.now },
 });
 
-export const Drink = mongoose.model("Drink", drinkSchema);
+const Drink = mongoose.model("Drink", drinkSchema);
 
-export async function createDrink() {
+async function createDrink() {
 	const drink = new Drink({
 		name: "Cafe Americano",
 		image:

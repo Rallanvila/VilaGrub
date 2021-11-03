@@ -1,10 +1,10 @@
 import Head from "next/head";
 import "normalize.css";
-import SignInHeader from "../components/SignInHeader/SignInHeader";
-import SignInForm from "../components/Sign-In-Form/SignInForm";
-import { LoginCredentials } from "../components/LoginCredentials/LoginCredentials";
-import { SignInWrapper } from "../helpers/SignInWrapper.styled";
-import { SignInFooter } from "../components/SignInFooter/SignInFooter";
+import SignInForm from "../../components/Sign-In-Form/SignInForm";
+import SignInHeader from "../../components/SignInHeader/SignInHeader";
+import { LoginCredentials } from "../../components/LoginCredentials/LoginCredentials";
+import { SignInWrapper } from "../../helpers/SignInWrapper.styled";
+import { SignInFooter } from "../../components/SignInFooter/SignInFooter";
 
 // -------------------------------------------
 // **  PAGE
@@ -16,12 +16,12 @@ export default function Menu() {
 			<Head>
 				<title>Vila's Grub Spot | Sign In</title>
 			</Head>
-			<SignInHeader />
+			{/* <SignInHeader /> */}
 			<SignInWrapper>
 				<SignInForm />
 				<LoginCredentials />
 			</SignInWrapper>
-			<SignInFooter />
+			{/* <SignInFooter /> */}
 			<p
 				style={{
 					width: "fit-content",

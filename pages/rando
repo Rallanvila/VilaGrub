@@ -1,0 +1,34 @@
+			{drink.map((m, index) => (
+				<p key={index}>{m._id}</p>
+			))}
+
+            	const drink = drinks[0];
+
+                			{console.log(drink._id)}
+
+
+
+						{itemSize.map((size, index) => (
+							<MenuItem key={index} value={size}>
+								{size}
+							</MenuItem>
+						))}
+
+                        export default function MenuItemId({ drinks }) {
+	// Creates connection to DB in cloud
+                        const router = useRouter();
+                        const { id } = router.query;
+                        console.log(drinks.size);
+                        return (
+                            <>
+                                <Head>
+                                    <title>Menu | {id}</title>
+                                </Head>
+                                <MenuItemDetailsBanner title={drinks.title} />
+                                <h1>{id + " " + "hello "}</h1>
+
+                                <MenuItemDetailsDetails itemSize={drinks.size} />
+                                <Cart />
+                            </>
+                        );
+                    }

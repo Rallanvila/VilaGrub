@@ -38,5 +38,6 @@ const FooterStyled = styled.footer`
 	margin: 0 auto;
 	h2 {
 		font-weight: 600;
+		cursor: pointer;
 	}
 `;

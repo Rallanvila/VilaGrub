@@ -8,10 +8,16 @@ import React from "react";
 // **  COMPONENT
 // -------------------------------------------
 
-export function MenuItemDetailsDetails() {
+export function MenuItemDetailsDetails({
+	itemSize,
+	addIns,
+	itemFlavors,
+	itemSweeteners,
+}) {
 	const [size, setSize] = React.useState("");
 	const [milk, setMilk] = React.useState("");
 	const [flavors, setFlavors] = React.useState("");
+	const [sweeteners, setSweeteners] = React.useState("");
 
 	const handleSize = (event) => {
 		setSize(event.target.value);
@@ -23,6 +29,9 @@ export function MenuItemDetailsDetails() {
 
 	const handleFlavors = (event) => {
 		setFlavors(event.target.value);
+	};
+	const handleSweeteners = (event) => {
+		setSweeteners(event.target.value);
 	};
 	return (
 		<Grid
@@ -45,9 +54,11 @@ export function MenuItemDetailsDetails() {
 						onChange={handleSize}
 						style={{ marginBottom: "1rem" }}
 					>
-						<MenuItem value={10}>Small</MenuItem>
-						<MenuItem value={20}>Medium</MenuItem>
-						<MenuItem value={30}>Large</MenuItem>
+						{itemSize.map((size, index) => (
+							<MenuItem key={index} value={size}>
+								{size}
+							</MenuItem>
+						))}
 					</Select>
 				</FormControl>
 				<FormControl fullWidth>
@@ -60,12 +71,11 @@ export function MenuItemDetailsDetails() {
 						onChange={handleMilk}
 						style={{ marginBottom: "1rem" }}
 					>
-						<MenuItem value={"none"}>None</MenuItem>
-						<MenuItem value={"lo-fat"}>Lo-fat</MenuItem>
-						<MenuItem value={"Skim"}>Skim</MenuItem>
-						<MenuItem value={"Almond"}>Almond</MenuItem>
-						<MenuItem value={"Coconut"}>Coconut</MenuItem>
-						<MenuItem value={"Oot"}>Oat</MenuItem>
+						{addIns.map((addIn, index) => (
+							<MenuItem key={index} value={addIn}>
+								{addIn}
+							</MenuItem>
+						))}
 					</Select>
 				</FormControl>
 				<FormControl fullWidth>
@@ -78,12 +88,28 @@ export function MenuItemDetailsDetails() {
 						onChange={handleFlavors}
 						style={{ marginBottom: "1rem" }}
 					>
-						<MenuItem value={"none"}>None</MenuItem>
-						<MenuItem value={"lo-fat"}>Lo-fat</MenuItem>
-						<MenuItem value={"Skim"}>Skim</MenuItem>
-						<MenuItem value={"Almond"}>Almond</MenuItem>
-						<MenuItem value={"Coconut"}>Coconut</MenuItem>
-						<MenuItem value={"Oot"}>Oat</MenuItem>
+						{itemFlavors.map((flavor, index) => (
+							<MenuItem key={index} value={flavor}>
+								{flavor}
+							</MenuItem>
+						))}
+					</Select>
+				</FormControl>
+				<FormControl fullWidth>
+					<InputLabel id="flavors">Select Sweeteners</InputLabel>
+					<Select
+						labelId="flavors"
+						id="flavors"
+						value={sweeteners}
+						label="flavors"
+						onChange={handleSweeteners}
+						style={{ marginBottom: "1rem" }}
+					>
+						{itemSweeteners.map((sweetener, index) => (
+							<MenuItem key={index} value={sweetener}>
+								{sweetener}
+							</MenuItem>
+						))}
 					</Select>
 				</FormControl>
 			</Customizations>

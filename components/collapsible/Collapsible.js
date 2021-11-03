@@ -22,9 +22,9 @@ export default function Collapsible({
 				<header>
 					<h2>{title}</h2>
 					{clicked ? (
-						<FaChevronDown onClick={toggle} />
+						<FaChevronDown onClick={toggle} style={{ cursor: "pointer" }} />
 					) : (
-						<FaChevronRight onClick={toggle} />
+						<FaChevronRight onClick={toggle} style={{ cursor: "pointer" }} />
 					)}
 				</header>
 				{clicked ? (

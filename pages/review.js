@@ -4,8 +4,6 @@ import { Grid } from "../helpers/Grid.styled";
 import { BsChevronLeft } from "react-icons/bs";
 import logo from "../svg/logo.svg";
 import styled from "styled-components";
-import { StyledMenuItem } from "../components/MenuItem/StyledMenuItem.styled";
-import { AiOutlineMinusCircle, AiOutlinePlusCircle } from "react-icons/ai";
 import Card_MenuItem from "../components/Card/Card_MenuItem";
 import Payment from "../components/Payment/Payment";
 
@@ -30,7 +28,7 @@ export default function Review() {
 					</Link>
 					<Header>
 						<BsChevronLeft />
-						<span>Back to Menu</span>
+						<Link href="./menu">Back to Menu</Link>
 					</Header>
 				</Header>
 				<Body>

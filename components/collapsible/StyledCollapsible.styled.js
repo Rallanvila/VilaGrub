@@ -13,6 +13,7 @@ export const StyledCollapsible = styled.div`
 			font-size: 1.2rem;
 			margin-top: 0;
 			font-weight: 600;
+			cursor: pointer;
 		}
 		i {
 			transition: transform 0.3s;
@@ -20,6 +21,7 @@ export const StyledCollapsible = styled.div`
 			transition: margin 0.2s ease-in-out, padding 0.2s ease-in-out,
 				background 0.2s ease-in-out, transform 0.2s ease-in-out;
 			border-radius: 50%;
+			cursor: pointer;
 			&:hover {
 				padding: 1rem;
 				margin: 0;
@@ -33,5 +35,6 @@ export const StyledCollapsible = styled.div`
 		color: black;
 		display: block;
 		margin-bottom: 1rem;
+		cursor: pointer;
 	}
 `;

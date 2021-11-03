@@ -15,14 +15,14 @@ export default function HotCoffees({ drinks }) {
 	return (
 		<>
 			<Head>
-				<title>Vila's Grub Spot | Hot Coffees</title>
+				<title>Vila's Grub Spot | Iced Coffees</title>
 			</Head>
 			<MenuGrid>
 				<SideMenu />
 				<div>
 					<MenuSection>
 						<StyledMenuHeader style={{ marginBottom: "2rem" }}>
-							Hot Coffees
+							Iced Coffees
 						</StyledMenuHeader>
 						<MenuSectionGrid>
 							{/* Drink Categories */}
@@ -49,7 +49,7 @@ export async function getStaticProps() {
 	const drinks = await db
 		.collection("menu")
 		.find({
-			category: "hot-coffee",
+			category: "iced-coffee",
 		})
 		.toArray();
 	// Return the data in JSON format to map/destructure.

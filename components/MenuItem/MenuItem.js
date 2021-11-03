@@ -7,6 +7,7 @@ import styled from "styled-components";
 // -------------------------------------------
 
 export default function MenuItem({ item: { imageUrl, alt, label, page } }) {
+	// console.log("page: ", page);
 	return (
 		<StyledMenuItem>
 			<Image
@@ -25,7 +26,7 @@ export default function MenuItem({ item: { imageUrl, alt, label, page } }) {
 // **  STYLED-COMPONENT
 // -------------------------------------------
 
-const StyledMenuItem = styled.div`
+export const StyledMenuItem = styled.div`
 	display: flex;
 	align-items: center;
 	margin-bottom: 1rem;
@@ -43,6 +44,7 @@ const StyledMenuItem = styled.div`
 		font-weight: 500;
 		text-decoration: none;
 		color: #212529;
+		text-transform: capitalize;
 		cursor: pointer;
 	}
 	@media screen and (min-width: 1000px) {

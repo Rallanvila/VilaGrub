@@ -7,13 +7,14 @@ import Coffee from "../../public/coffee.webp";
 // **  COMPONENT
 // -------------------------------------------
 
-export function MenuItemDetailsBanner() {
+export function MenuItemDetailsBanner({ title, img, alt }) {
 	return (
 		<ItemDetailsBanner>
 			<Container display="flex" align="center" justify="space-evenly">
-				<Image src={Coffee} width={300} height={300} alt={"coffee"} />
+				<Image src={img} width={300} height={300} alt={alt} />
+				{/* <Image src={img} width={300} height={300} alt={alt} /> */}
 				<div>
-					<h1>Caffe Americano</h1>
+					<h1>{title}</h1>
 					<span>15 Calories</span>
 				</div>
 			</Container>
@@ -31,6 +32,10 @@ const ItemDetailsBanner = styled.header`
 	padding: 3rem 2rem;
 	h1 {
 		color: white;
+	}
+	img {
+		object-position: cover;
+		object-position: center;
 	}
 	span {
 		color: white;
