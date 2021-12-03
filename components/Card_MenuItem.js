@@ -9,7 +9,9 @@ import { useState } from "react";
 // **  COMPONENT
 // -------------------------------------------
 
-export default function Card_MenuItem() {
+export default function Card_MenuItem({
+	item: { image, title, milk, flavors, sweeteners, size },
+}) {
 	const [count, setCount] = useState(1);
 
 	function upCount() {
@@ -30,7 +32,7 @@ export default function Card_MenuItem() {
 				/>
 				<h3 style={{ marginLeft: "2rem 1rem 0 " }}>{count}</h3>
 				<Link href="#">
-					<a style={{ marginLeft: "1rem" }}>Hot Coffee</a>
+					<a style={{ marginLeft: "1rem" }}>{title}</a>
 				</Link>
 			</StyledMenuItem>
 			<div
@@ -52,6 +54,9 @@ export default function Card_MenuItem() {
 					onClick={downCount}
 					style={{ cursor: "pointer" }}
 				/>
+				<span>
+					{size} {milk} {flavors} {sweeteners}
+				</span>
 			</div>
 		</Card>
 	);

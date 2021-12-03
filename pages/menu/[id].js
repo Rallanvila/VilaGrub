@@ -1,7 +1,6 @@
 import { ObjectId } from "mongodb";
 import { useRouter } from "next/dist/client/router";
 import Head from "next/head";
-import { Cart } from "../../components/Cart";
 import { MenuItemDetailsBanner } from "../../components/MenuItemDetailsBanner";
 import { MenuItemDetailsDetails } from "../../components/MenuItemDetailsDetails";
 import clientPromise from "../../lib/mongodb";

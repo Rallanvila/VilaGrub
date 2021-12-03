@@ -4,14 +4,19 @@ import { Grid } from "../helpers/Grid.styled";
 import { BsChevronLeft } from "react-icons/bs";
 import logo from "../svg/logo.svg";
 import styled from "styled-components";
-import Card_MenuItem from "../components/Card/Card_MenuItem";
-import Payment from "../components/Payment/Payment";
+import Card_MenuItem from "../components/Card_MenuItem";
+import Payment from "../components/Payment";
+import { useContext } from "react";
+import { CartContext } from "../lib/context";
 
 // -------------------------------------------
 // **  PAGE
 // -------------------------------------------
 
 export default function Review() {
+	const { cart, setCart } = useContext(CartContext);
+	console.log(cart);
+
 	return (
 		<Grid
 			style={{
@@ -42,10 +47,12 @@ export default function Review() {
 			</LeftSide>
 
 			<ReviewOrder>
-				<Card_MenuItem />
-				<Payment />
+				{cart.map((item) => (
+					<Card_MenuItem key={item.id} item={item} />
+				))}
+				{/* <Payment /> */}
 			</ReviewOrder>
-			<Button
+			{/* <Button
 				size="large"
 				color="success"
 				variant="contained"
@@ -57,7 +64,7 @@ export default function Review() {
 				}}
 			>
 				Cart Price
-			</Button>
+			</Button> */}
 		</Grid>
 	);
 }
