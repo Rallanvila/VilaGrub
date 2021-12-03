@@ -1,8 +1,8 @@
 import Head from "next/head";
 import "normalize.css";
-import SideMenu from "../../components/sidemenu/sidemenu";
+import SideMenu from "../../components/sidemenu";
 import { MenuGrid } from "../../helpers/MenuGrid.styled";
-import MainMenu from "../../components/MainMenu/MainMenu";
+import MainMenu from "../../components/MainMenu";
 
 // -------------------------------------------
 // **  PAGE

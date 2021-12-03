@@ -1,7 +1,7 @@
-import Collapsible from "../collapsible/Collapsible";
-import { StyledCollapsible } from "../collapsible/StyledCollapsible.styled";
+import Collapsible from "./collapsible/Collapsible";
+import { StyledCollapsible } from "./collapsible/StyledCollapsible.styled";
 import FooterSocial from "./FooterSocial";
-import { data } from "../collapsible/data-collapsible";
+import { data } from "./collapsible/data-collapsible";
 import styled from "styled-components";
 
 // -------------------------------------------

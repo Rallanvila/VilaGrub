@@ -1,9 +1,9 @@
-import { Button } from "../Button";
-import { FlexCenter } from "../../helpers/FlexCenter.styled";
-import { Grid } from "../../helpers/Grid.styled";
+import { Button } from "./Button";
+import { FlexCenter } from "../helpers/FlexCenter.styled";
+import { Grid } from "../helpers/Grid.styled";
 import React, { Fragment } from "react";
-import duoCardContent from "../../data/content-DuoCard";
-import { ImageContainer } from "../../helpers/ImageContainer.styled";
+import duoCardContent from "../data/content-DuoCard";
+import { ImageContainer } from "../helpers/ImageContainer.styled";
 import Image from "next/image";
 
 // -------------------------------------------

@@ -1,5 +1,5 @@
-import { Container } from "../../helpers/Container.styled";
-import { FlexCenter } from "../../helpers/FlexCenter.styled";
+import { Container } from "../helpers/Container.styled";
+import { FlexCenter } from "../helpers/FlexCenter.styled";
 
 // -------------------------------------------
 // **  COMPONENT

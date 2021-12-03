@@ -1,5 +1,8 @@
-import Footer from "../footer/Footer";
 import NavBar from "../NavBar/NavBar";
+import Footer from "../Footer";
+import { Cart } from "../Cart";
+import { useContext } from "react";
+import { CartContext } from "../../lib/context";
 
 // -------------------------------------------
 // **  COMPONENT
@@ -10,6 +13,7 @@ const Layout = ({ children }) => {
 		<>
 			<NavBar />
 			{children}
+			<Cart />
 			<Footer />
 		</>
 	);

@@ -1,10 +1,10 @@
-import MenuItem from "../MenuItem/MenuItem";
-import { drinkCategories } from "../../data/drinkCategories";
-import { StyledMenuHeader } from "../MenuHeader/StyledMenuHeader.styled";
-import { MenuSection } from "../../helpers/MenuSection.styled";
-import { foodCategories } from "../../data/foodCategories";
-import { dessertCategories } from "../../data/dessertsCategories";
-import { MenuSectionGrid } from "../../helpers/MenuSectionGrid.styled";
+import MenuItem from "./MenuItem";
+import { drinkCategories } from "../data/drinkCategories";
+import { StyledMenuHeader } from "./StyledMenuHeader.styled";
+import { MenuSection } from "../helpers/MenuSection.styled";
+import { foodCategories } from "../data/foodCategories";
+import { dessertCategories } from "../data/dessertsCategories";
+import { MenuSectionGrid } from "../helpers/MenuSectionGrid.styled";
 
 // -------------------------------------------
 // **  COMPONENT

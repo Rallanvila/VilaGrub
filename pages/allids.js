@@ -1,5 +1,4 @@
 import Head from "next/head";
-import mongoData from "../data/mongoData.json";
 import clientPromise from "../lib/mongodb";
 
 const test2 = ({ allItemsJSON }) => {

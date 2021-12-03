@@ -1,8 +1,8 @@
-import { Grid } from "../../helpers/Grid.styled";
+import { Grid } from "../helpers/Grid.styled";
 import Image from "next/dist/client/image";
-import { ImageContainer } from "../../helpers/ImageContainer.styled";
-import { Button } from "../Button";
-import bannerContent from "../../data/content-CardBanner";
+import { ImageContainer } from "../helpers/ImageContainer.styled";
+import { Button } from "./Button";
+import bannerContent from "../data/content-CardBanner";
 import React, { Fragment } from "react";
 
 // -------------------------------------------

@@ -1,12 +1,12 @@
 import { ObjectId } from "mongodb";
 import { useRouter } from "next/dist/client/router";
 import Head from "next/head";
-import { Cart } from "../../components/Cart/Cart";
-import { MenuItemDetailsBanner } from "../../components/MenuItemDetails/MenuItemDetailsBanner";
-import { MenuItemDetailsDetails } from "../../components/MenuItemDetailsDetails/MenuItemDetailsDetails";
-import { drinkCategories } from "../../data/drinkCategories";
+import { Cart } from "../../components/Cart";
+import { MenuItemDetailsBanner } from "../../components/MenuItemDetailsBanner";
+import { MenuItemDetailsDetails } from "../../components/MenuItemDetailsDetails";
 import clientPromise from "../../lib/mongodb";
-import server from "../../config/config";
+import { useContext } from "react";
+import { CartContext } from "../../lib/context";
 
 // -------------------------------------------
 // **  DATABASE CALL
@@ -19,16 +19,47 @@ export async function getServerSideProps({ params }) {
 	// Query the DB with what you want to pull
 	const route = params.id;
 	const menuObjId = await db.collection("menu").find(ObjectId(route)).toArray();
-	const allId = await db.collection("menu").find().toArray();
 	// Return the data in JSON format to map/destructure.
 	return {
 		// props: { drinks: route },
 		props: {
 			drinks: JSON.parse(JSON.stringify(menuObjId))[0],
-			allIds: JSON.parse(JSON.stringify(allId)),
 		},
 	};
 }
+
+// -------------------------------------------
+// **  COMPONENT
+// -------------------------------------------
+
+export default function MenuItemId({ drinks }) {
+	// Creates connection to DB in cloud
+	const router = useRouter();
+	const { id } = router.query;
+	const shoppingCart = useContext(CartContext);
+
+	return (
+		<>
+			<Head>
+				<title>Menu | {drinks.title}</title>
+			</Head>
+			<MenuItemDetailsBanner
+				title={drinks.title}
+				img={drinks.imageUrl}
+				alt={drinks.alt}
+			/>
+			<MenuItemDetailsDetails
+				title={drinks.title}
+				itemSize={drinks.size}
+				addIns={drinks.addIns}
+				itemFlavors={drinks.flavors}
+				itemSweeteners={drinks.sweeteners}
+			/>
+			<Cart />
+		</>
+	);
+}
+
 // // -------------------------------------------
 // // **  SET STATIC PATH IN ORDER TO PULL FROM DB
 // // -------------------------------------------
@@ -57,33 +88,3 @@ export async function getServerSideProps({ params }) {
 // 		},
 // 	};
 // }
-
-// -------------------------------------------
-// **  COMPONENT
-// -------------------------------------------
-
-export default function MenuItemId({ drinks, allIds }) {
-	// Creates connection to DB in cloud
-	const router = useRouter();
-	const { id } = router.query;
-
-	return (
-		<>
-			<Head>
-				<title>Menu | {drinks.title}</title>
-			</Head>
-			<MenuItemDetailsBanner
-				title={drinks.title}
-				img={drinks.imageUrl}
-				alt={drinks.alt}
-			/>
-			<MenuItemDetailsDetails
-				itemSize={drinks.size}
-				addIns={drinks.addIns}
-				itemFlavors={drinks.flavors}
-				itemSweeteners={drinks.sweeteners}
-			/>
-			<Cart />
-		</>
-	);
-}

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styled from "styled-components";
-import { Container } from "../../helpers/Container.styled";
-import Coffee from "../../public/coffee.webp";
+import { Container } from "../helpers/Container.styled";
+import Coffee from "../public/coffee.webp";
 
 // -------------------------------------------
 // **  COMPONENT
@@ -34,8 +34,9 @@ const ItemDetailsBanner = styled.header`
 		color: white;
 	}
 	img {
-		object-position: cover;
+		object-fit: cover;
 		object-position: center;
+		border-radius: 0.5rem;
 	}
 	span {
 		color: white;

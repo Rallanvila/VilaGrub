@@ -1,6 +1,6 @@
 import logo from "../../svg/logo.svg";
 import Image from "next/image";
-import { SignInNav } from "../../helpers/SignInNav.styled";
+import { SignInNav } from "../helpers/SignInNav.styled";
 import { Link } from "@mui/material";
 
 // -------------------------------------------

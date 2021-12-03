@@ -1,7 +1,7 @@
-import { dessertCategories } from "../../data/dessertsCategories";
-import { drinkCategories } from "../../data/drinkCategories";
-import { foodCategories } from "../../data/foodCategories";
-import { SideMenuHeader } from "../../helpers/SideMenuHeader.styled";
+import { dessertCategories } from "../data/dessertsCategories";
+import { drinkCategories } from "../data/drinkCategories";
+import { foodCategories } from "../data/foodCategories";
+import { SideMenuHeader } from "../helpers/SideMenuHeader.styled";
 import styled from "styled-components";
 
 // -------------------------------------------

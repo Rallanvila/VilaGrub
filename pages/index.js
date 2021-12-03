@@ -1,8 +1,10 @@
 import Head from "next/head";
 import "normalize.css";
-import MainFeature from "../components/MainFeature/MainFeature";
-import Hero from "../components/Hero/Hero";
-import SecondaryFeature from "../components/SecondaryFeature/SecondaryFeature";
+import MainFeature from "../components/MainFeature";
+import Hero from "../components/Hero";
+import SecondaryFeature from "../components/SecondaryFeature";
+import { CartContext } from "../lib/context";
+import { useContext } from "react";
 
 // export const theme = {
 // 	colors: {

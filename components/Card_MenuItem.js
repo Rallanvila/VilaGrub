@@ -1,7 +1,7 @@
 import { Card } from "@mui/material";
 import Image from "next/image";
 import Link from "next/link";
-import { StyledMenuItem } from "../../components/MenuItem/MenuItem";
+import { StyledMenuItem } from "./MenuItem";
 import { AiOutlineMinusCircle, AiOutlinePlusCircle } from "react-icons/ai";
 import { useState } from "react";
 
@@ -12,7 +12,6 @@ import { useState } from "react";
 export default function Card_MenuItem() {
 	const [count, setCount] = useState(1);
 
-	console.log(count);
 	function upCount() {
 		return setCount(count + 1);
 	}

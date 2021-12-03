@@ -11,13 +11,21 @@ import { MdLocationOn } from "react-icons/md";
 import { FaBars } from "react-icons/fa";
 import { UserContext } from "../../lib/context";
 import { useContext } from "react";
+import { useAuth0 } from "@auth0/auth0-react";
 
 // -------------------------------------------
 // **  COMPONENT
 // -------------------------------------------
 
 export default function NavBar() {
-	const { user, username } = useContext(UserContext);
+	// const { user, username } = useContext(UserContext);
+	const {
+		loginWithRedirect,
+		user,
+		isAuthenticated,
+		isLoading,
+		logout,
+	} = useAuth0();
 
 	return (
 		<>
@@ -51,14 +59,38 @@ export default function NavBar() {
 							<i className="fas fa-map-marker-alt"></i>
 							<MdLocationOn className="nav__btn" />
 							<span className="title">Find a store</span>
-							<Link href="/sign-in" passHref>
-								<Button className="nav__btn" border="#212529">
+
+							{!isAuthenticated ? (
+								<Button
+									onClick={() => loginWithRedirect()}
+									className="nav__btn"
+									border="#212529"
+								>
 									Sign In
 								</Button>
-							</Link>
-							<Button className="nav__btn" bg="#212529" color="#fff">
-								Join Now
-							</Button>
+							) : (
+								<Button
+									onClick={() => loginWithRedirect()}
+									className="nav__btn"
+									border="#212529"
+								>
+									👋 {user.given_name}
+								</Button>
+							)}
+							{!isAuthenticated ? (
+								<Button className="nav__btn" bg="#212529" color="#fff">
+									Join Now
+								</Button>
+							) : (
+								<Button
+									onClick={() => logout({ returnTo: window.location.origin })}
+									className="nav__btn"
+									bg="#212529"
+									color="#fff"
+								>
+									Log Out
+								</Button>
+							)}
 						</div>
 					</SpaceBetween>
 				</Container>
@@ -76,7 +108,11 @@ export default function NavBar() {
 						Gift Cards
 					</a>
 					<div className="navbar__account">
-						<Button style={{ marginRight: "1rem" }} border="#212529">
+						<Button
+							onClick={() => loginWithRedirect()}
+							style={{ marginRight: "1rem" }}
+							border="#212529"
+						>
 							Sign In
 						</Button>
 						<Button bg="#212529" color="#fff">
