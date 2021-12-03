@@ -29,6 +29,7 @@
     "sass": "^1.42.1",
     "sharp": "^0.29.1",
     "styled-components": "^5.3.1",
+    "use-persisted-state": "^0.3.3",
     "winston": "^3.3.3",
     "winston-mongodb": "^5.0.7",
     "zsh": "^0.0.1"

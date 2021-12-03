@@ -14,7 +14,6 @@ import { useLocalStorage } from "../lib/useLocalStorage";
 export function Cart() {
 	const router = useRouter();
 	const { cart, setCart } = useContext(CartContext);
-	const [name, setName] = useLocalStorage("newCart", "");
 
 	function getStorageValue(key, defaultValue) {
 		// getting stored value
@@ -24,8 +23,8 @@ export function Cart() {
 			return initial;
 		}
 	}
-	const cartLength = name.length;
-	// const cartLength = cart.length;
+	// const cartLength = name.length;
+	const cartLength = cart.length;
 
 	const {
 		loginWithRedirect,
@@ -37,19 +36,20 @@ export function Cart() {
 
 	return (
 		<>
-			<h1>hello</h1>
-			{cartLength > 0 ? (
+			{cart.length > 0 ? (
 				<>
 					<StyledCart>
 						<div className="shopping-cart">
-							<span>{cartLength === 0 ? null : `${cartLength}`}</span>
+							<span>{cart.length === 0 ? null : `${cart.length}`}</span>
 							<AiTwotoneShopping
 								style={{ fontSize: "3rem", color: "#89a525" }}
 							/>
 						</div>
 					</StyledCart>
 				</>
-			) : null}
+			) : (
+				""
+			)}
 		</>
 	);
 }

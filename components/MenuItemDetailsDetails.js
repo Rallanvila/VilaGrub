@@ -11,7 +11,6 @@ import {
 	MenuItem,
 	Select,
 } from "@mui/material";
-import { useLocalStorage } from "../lib/useLocalStorage";
 
 // -------------------------------------------
 // **  COMPONENT
@@ -33,7 +32,6 @@ export function MenuItemDetailsDetails({
 	const [flavors, setFlavors] = useState("");
 	const [sweeteners, setSweeteners] = useState("");
 	const { cart, setCart } = useContext(CartContext);
-	const [name, setName] = useLocalStorage("newCart", "");
 
 	//Form Management
 	const {
@@ -46,15 +44,7 @@ export function MenuItemDetailsDetails({
 		data.title = title;
 		const newCart = [...cart, data];
 		setCart(newCart);
-		setName([...cart, data]);
 	};
-
-	//Add Cart to localStorage
-	useEffect(() => {
-		localStorage.setItem("cart", JSON.stringify(cart));
-		console.log("useEffect cart: ", cart);
-		console.log("useEffect new cart: ", cart);
-	}, [cart]);
 
 	return (
 		<Grid

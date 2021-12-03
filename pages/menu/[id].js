@@ -55,7 +55,6 @@ export default function MenuItemId({ drinks }) {
 				itemFlavors={drinks.flavors}
 				itemSweeteners={drinks.sweeteners}
 			/>
-			<Cart />
 		</>
 	);
 }
