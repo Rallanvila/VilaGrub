@@ -1,10 +1,10 @@
 import Head from "next/head";
 import "normalize.css";
 import SignInForm from "../../components/Sign-In-Form/SignInForm";
-import SignInHeader from "../../components/SignInHeader/SignInHeader";
-import { LoginCredentials } from "../../components/LoginCredentials/LoginCredentials";
+// import SignInHeader from "../../components/SignInHeader/SignInHeader";
+import { LoginCredentials } from "../../components/LoginCredentials";
 import { SignInWrapper } from "../../helpers/SignInWrapper.styled";
-import { SignInFooter } from "../../components/SignInFooter/SignInFooter";
+// import { SignInFooter } from "../../components/SignInFooter/SignInFooter";
 
 // -------------------------------------------
 // **  PAGE
@@ -14,7 +14,7 @@ export default function Menu() {
 	return (
 		<>
 			<Head>
-				<title>Vila's Grub Spot | Sign In</title>
+				<title>Vila&apos;s Grub Spot | Sign In</title>
 			</Head>
 			{/* <SignInHeader /> */}
 			<SignInWrapper>
@@ -31,7 +31,7 @@ export default function Menu() {
 					paddingBottom: "3rem",
 				}}
 			>
-				&copy; 2021 Vila's Grubspot
+				&copy; 2021 Vila&apos;s Grubspot
 			</p>
 		</>
 	);

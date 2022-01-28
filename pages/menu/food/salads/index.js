@@ -1,10 +1,10 @@
 import Head from "next/head";
-import { StyledMenuHeader } from "../../../../components/MenuHeader/StyledMenuHeader.styled";
+import { StyledMenuHeader } from "../../../../components/StyledMenuHeader.styled";
 import { MenuSection } from "../../../../helpers/MenuSection.styled";
 import { MenuSectionGrid } from "../../../../helpers/MenuSectionGrid.styled";
-import MenuItem from "../../../../components/MenuItem/MenuItem";
+import MenuItem from "../../../../components/MenuItem";
 import { MenuGrid } from "../../../../helpers/MenuGrid.styled";
-import SideMenu from "../../../../components/sidemenu/sidemenu";
+import SideMenu from "../../../../components/SideMenu";
 import clientPromise from "../../../../lib/mongodb";
 
 // -------------------------------------------
@@ -15,7 +15,7 @@ export default function HotCoffees({ salads }) {
 	return (
 		<>
 			<Head>
-				<title>Vila's Grub Spot | Salads</title>
+				<title>Vila&apos;s Grub Spot | Salads</title>
 			</Head>
 			<MenuGrid>
 				<SideMenu />

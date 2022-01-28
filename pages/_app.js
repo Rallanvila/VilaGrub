@@ -9,7 +9,7 @@ const useCartState = createPersistedState("cart");
 
 export default function MyApp({ Component, pageProps }) {
 	const [cart, setCart] = useCartState([]);
-	const value = useMemo(() => ({ cart, setCart }), [cart]);
+	const value = useMemo(() => ({ cart, setCart }), [cart, setCart]);
 
 	return (
 		<Auth0Provider

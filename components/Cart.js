@@ -7,6 +7,7 @@ import { useAuth0 } from "@auth0/auth0-react";
 import { useContext } from "react";
 import { CartContext } from "../lib/context";
 import { useLocalStorage } from "../lib/useLocalStorage";
+import Review from "../pages/review";
 
 // -------------------------------------------
 // **  COMPONENT
@@ -14,25 +15,6 @@ import { useLocalStorage } from "../lib/useLocalStorage";
 export function Cart() {
 	const router = useRouter();
 	const { cart, setCart } = useContext(CartContext);
-
-	function getStorageValue(key, defaultValue) {
-		// getting stored value
-		if (typeof window !== "undefined") {
-			const saved = localStorage.getItem(key);
-			const initial = saved !== null ? JSON.parse(saved) : defaultValue;
-			return initial;
-		}
-	}
-	// const cartLength = name.length;
-	const cartLength = cart.length;
-
-	const {
-		loginWithRedirect,
-		user,
-		isAuthenticated,
-		isLoading,
-		logout,
-	} = useAuth0();
 
 	return (
 		<>

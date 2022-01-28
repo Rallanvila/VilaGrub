@@ -24,7 +24,7 @@ export default function Home() {
 	return (
 		<>
 			<Head>
-				<title>Vila's Grub Spot</title>
+				<title>Vila&apos;s Grub Spot</title>
 			</Head>
 			<Hero />
 			<MainFeature />

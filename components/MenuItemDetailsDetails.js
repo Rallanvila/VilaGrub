@@ -4,6 +4,8 @@ import { useState, useContext, useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { useRouter } from "next/dist/client/router";
 import { CartContext } from "../lib/context";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import {
 	Button,
 	FormControl,
@@ -22,6 +24,7 @@ export function MenuItemDetailsDetails({
 	itemFlavors,
 	itemSweeteners,
 	title,
+	imageUrl,
 }) {
 	const router = useRouter();
 	const thisPageId = router.query.id;
@@ -40,10 +43,26 @@ export function MenuItemDetailsDetails({
 		formState: { errors },
 	} = useForm();
 
+	//Toast
+	const addToCartToast = (item) => {
+		toast.success(`A ${item} has been added to your Cart!`, {
+			position: "top-right",
+			autoClose: 4000,
+			hideProgressBar: false,
+			closeOnClick: true,
+			pauseOnHover: true,
+			draggable: true,
+			progress: undefined,
+		});
+	};
+
 	const onSubmit = (data) => {
+		// data.id = !cart ? data.id === 1 : cart.length + 1;
 		data.title = title;
+		data.imageUrl = imageUrl;
 		const newCart = [...cart, data];
 		setCart(newCart);
+		addToCartToast(title);
 	};
 
 	return (
@@ -51,6 +70,18 @@ export function MenuItemDetailsDetails({
 			style={{ padding: "0 3rem", textAlign: "start", alignItems: "start" }}
 		>
 			<Customizations>
+				<ToastContainer
+					position="top-right"
+					autoClose={4000}
+					hideProgressBar={false}
+					newestOnTop={false}
+					closeOnClick
+					rtl={false}
+					pauseOnFocusLoss
+					draggable
+					pauseOnHover
+				/>
+				{/* Same as */}
 				<p>
 					Espresso shots topped with hot water create a light layer of crema
 					culminating in this wonderfully rich cup with depth and nuance. Pro

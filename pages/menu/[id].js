@@ -36,7 +36,6 @@ export default function MenuItemId({ drinks }) {
 	const router = useRouter();
 	const { id } = router.query;
 	const shoppingCart = useContext(CartContext);
-
 	return (
 		<>
 			<Head>
@@ -53,6 +52,7 @@ export default function MenuItemId({ drinks }) {
 				addIns={drinks.addIns}
 				itemFlavors={drinks.flavors}
 				itemSweeteners={drinks.sweeteners}
+				imageUrl={drinks.imageUrl}
 			/>
 		</>
 	);

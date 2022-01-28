@@ -13,9 +13,9 @@ export function LoginCredentials() {
 					<h3>Dont want to enter your email and create a password?</h3>
 					<p>
 						Here is a dummy login to experience the checkout process, view
-						recent orders. If you'd like to see the automated email that get's
-						sent to you after your order, enter an email address and password
-						above!{" "}
+						recent orders. If you&apos;d like to see the automated email that
+						get&apos;s sent to you after your order, enter an email address and
+						password above!{" "}
 					</p>
 					<div>
 						<UserPass>Username:</UserPass>

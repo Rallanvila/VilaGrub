@@ -4,7 +4,7 @@ import { MenuSection } from "../../../../helpers/MenuSection.styled";
 import { MenuSectionGrid } from "../../../../helpers/MenuSectionGrid.styled";
 import MenuItem from "../../../../components/MenuItem";
 import { MenuGrid } from "../../../../helpers/MenuGrid.styled";
-import SideMenu from "../../../../components/sidemenu";
+import SideMenu from "../../../../components/SideMenu";
 import clientPromise from "../../../../lib/mongodb";
 
 // -------------------------------------------
@@ -15,7 +15,7 @@ export default function HotCoffees({ drinks }) {
 	return (
 		<>
 			<Head>
-				<title>Vila's Grub Spot | Iced Teas</title>
+				<title>Vila&apos;s Grub Spot | Iced Teas</title>
 			</Head>
 			<MenuGrid>
 				<SideMenu />

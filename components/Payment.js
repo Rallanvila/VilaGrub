@@ -16,7 +16,7 @@ export default function Payment() {
 					aria-describedby="my-helper-text"
 				/>
 				<FormHelperText id="my-helper-text">
-					We'll never share your email.
+					We&apos;ll never share your email.
 				</FormHelperText>
 			</FormControl>
 		</StyledPayment>

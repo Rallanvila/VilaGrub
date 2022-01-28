@@ -10,27 +10,27 @@ import { useState } from "react";
 // -------------------------------------------
 
 export default function Card_MenuItem({
-	item: { image, title, milk, flavors, sweeteners, size },
+	item: { image, title, milk, flavors, sweeteners, size, imageUrl, id },
+	handleRemove,
+	handleAdd,
 }) {
-	const [count, setCount] = useState(1);
-
-	function upCount() {
-		return setCount(count + 1);
-	}
-	function downCount() {
-		return setCount(count <= 0 ? 0 : count - 1);
-	}
 	return (
-		<Card style={{ width: "100%", position: "relative", padding: "1rem" }}>
-			<StyledMenuItem>
+		<Card
+			style={{
+				width: "100%",
+				position: "relative",
+				margin: "1rem 0",
+				padding: "1rem 1rem 1.5rem",
+			}}
+		>
+			<StyledMenuItem style={{ margin: "0" }}>
 				<Image
 					className="image"
-					src="https://images.pexels.com/photos/544113/pexels-photo-544113.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+					src={imageUrl}
 					alt="drink"
 					width="112"
 					height="112"
 				/>
-				<h3 style={{ marginLeft: "2rem 1rem 0 " }}>{count}</h3>
 				<Link href="#">
 					<a style={{ marginLeft: "1rem" }}>{title}</a>
 				</Link>
@@ -38,25 +38,35 @@ export default function Card_MenuItem({
 			<div
 				style={{
 					display: "flex",
-					position: "absolute",
-					bottom: "37px",
-					left: "157px",
-					zIndex: "10",
+					justifyContent: "flex-start",
+					flexDirection: "column",
 					fontSize: "1.1rem",
 					color: "rgba(0,0,0,.5)",
+					position: "absolute",
+					bottom: "15px",
+					left: "142px",
+					alignItems: "flex-start",
 				}}
 			>
-				<AiOutlinePlusCircle
-					onClick={upCount}
-					style={{ marginRight: ".5rem", cursor: "pointer" }}
-				/>
-				<AiOutlineMinusCircle
-					onClick={downCount}
-					style={{ cursor: "pointer" }}
-				/>
-				<span>
-					{size} {milk} {flavors} {sweeteners}
+				<span
+					style={{
+						marginBottom: ".5rem",
+						textTransform: "capitalize",
+						fontSize: ".9rem",
+					}}
+				>
+					{size}, {milk}, {flavors}, {sweeteners}
 				</span>
+				<div>
+					<AiOutlinePlusCircle
+						onClick={() => handleAdd(id)}
+						style={{ marginRight: ".5rem", cursor: "pointer" }}
+					/>
+					<AiOutlineMinusCircle
+						onClick={() => handleRemove(id)}
+						style={{ cursor: "pointer" }}
+					/>
+				</div>
 			</div>
 		</Card>
 	);

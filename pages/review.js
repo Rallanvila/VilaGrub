@@ -6,7 +6,7 @@ import logo from "../svg/logo.svg";
 import styled from "styled-components";
 import Card_MenuItem from "../components/Card_MenuItem";
 import Payment from "../components/Payment";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { CartContext } from "../lib/context";
 
 // -------------------------------------------
@@ -15,8 +15,35 @@ import { CartContext } from "../lib/context";
 
 export default function Review() {
 	const { cart, setCart } = useContext(CartContext);
-	console.log(cart);
+	//TODO: Set it so when item is added to state, it assigns an id +1 of the highest id in the local storage.
+	useEffect(() => {
+		let cartClone = [...cart];
+		let cartCloneIds = [];
+		let lastItem = cartClone[cartClone.length - 1];
+		console.log("cartClone: ", cartClone);
+		//Sets first id in cart if cart is 0
+		if (cartClone[0].id > 0) {
+			return;
+		}
+		if (cart.length === 1) {
+			cartClone[0].id = 1;
+			return setCart(cartClone);
+		}
+		// if (cart.length) {
+		// }
+		console.log("cart: ", cart);
+	}, [cart]);
 
+	function handleAdd(event) {
+		let addItem = cart.filter((item) => event === item.id);
+		let addItemClone = [...addItem];
+		let itemToAdd = addItemClone[0];
+		itemToAdd.id = itemToAdd.id + 1;
+		console.log(itemToAdd);
+		const newCart = [...cart, itemToAdd];
+		setCart(newCart);
+		console.log("cart: ", cart);
+	}
 	return (
 		<Grid
 			style={{
@@ -47,26 +74,71 @@ export default function Review() {
 			</LeftSide>
 
 			<ReviewOrder>
-				{cart.map((item) => (
-					<Card_MenuItem key={item.id} item={item} />
-				))}
-				{/* <Payment /> */}
+				{cart.length === 0
+					? "You have nothing in your cart yet."
+					: cart.map((item) => (
+							<Card_MenuItem
+								key={item.id}
+								item={item}
+								handleRemove={handleRemove}
+								handleAdd={handleAdd}
+							/>
+					  ))}
+				{/* {cart.map((item) => (
+					<Card_MenuItem
+						key={item.id}
+						item={item}
+						handleRemove={handleRemove}
+						handleAdd={handleAdd}
+					/>
+				))} */}
 			</ReviewOrder>
-			{/* <Button
-				size="large"
-				color="success"
-				variant="contained"
-				style={{
-					position: "absolute",
-					bottom: "2rem",
-					right: "2rem",
-					borderRadius: "20px",
-				}}
-			>
-				Cart Price
-			</Button> */}
 		</Grid>
 	);
+
+	function handleRemove(e) {
+		const removeItem = cart.filter((item) => e !== item.id);
+		setCart(removeItem);
+	}
+	console.log("cart: ", cart);
+
+	// useEffect(() => {
+	// 	let cartClone = [...cart];
+	// 	if (cart.length > 1) {
+	// 		let lastId = cartClone[cartClone.length - 1].id;
+	// 		let lastItem = cartClone[cartClone.length - 1];
+	// 		//Creates new Array of all ids to compare
+	// 		let allIds = [];
+	// 		for (const ids in cartClone) {
+	// 			allIds.push(cartClone[ids].id);
+	// 		}
+	// 		console.log("allIds: ", allIds);
+	// 		const filtered = allIds.filter((id) => id === lastId);
+	// 		if (filtered.length > 1) {
+	// 			lastItem.id = cartClone.length;
+	// 			setCart(cartClone);
+	// 		}
+	// 	}
+
+	// console.log("cartClone: ", cartClone);
+}
+{
+	/* <Payment /> */
+}
+{
+	/* <Button
+    size="large"
+    color="success"
+    variant="contained"
+    style={{
+        position: "absolute",
+        bottom: "2rem",
+        right: "2rem",
+        borderRadius: "20px",
+    }}
+>
+    Cart Price
+</Button> */
 }
 
 // -------------------------------------------
