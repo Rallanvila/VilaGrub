@@ -7,7 +7,7 @@ import styled from "styled-components";
 export const Container = styled.div`
 	max-width: 100%;
 	width: 1320px;
-	padding: 0 2rem;
+	/* padding: 0 1rem; */
 	margin: 0 auto;
 	overflow: hidden;
 	background: ${({ bg }) => bg};
@@ -15,7 +15,8 @@ export const Container = styled.div`
 	display: ${({ display }) => display || "block"};
 	justify-content: ${({ justify }) => justify || "flex-start"};
 	align-items: ${({ align }) => align || "flex-start"};
-	.navbar__expanded {
+
+	/* .navbar__expanded {
 		position: absolute;
 		opacity: 0;
 		width: 100vw;
@@ -70,5 +71,5 @@ export const Container = styled.div`
 		.navbar__expanded {
 			display: none;
 		}
-	}
+	} */
 `;
